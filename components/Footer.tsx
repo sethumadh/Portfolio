@@ -1,7 +1,6 @@
 import React from "react"
 import { motion } from "framer-motion"
 
-import { Socialmedia } from "./index"
 import Link from "next/link"
 
 const Footer = () => {

@@ -4,7 +4,6 @@ import { FcApprove, FcAlarmClock } from "react-icons/fc"
 import Image from "next/image"
 import Link from "next/link"
 
-import LineGradient from "./LineGradient"
 import { images } from "../constants"
 
 function Aboutme() {
@@ -117,24 +116,30 @@ function Aboutme() {
             <div className="w-full md:w-[90%] mx-auto flex flex-col">
               <p className="leading-loose tracking-wide text-lg md:text-xl font-light">
                 I am an{" "}
-                <span className="text-blue font-medium leading-loose tracking-wide ">Engineer Graduate</span>{" "}
+                <span className="text-blue font-medium leading-loose tracking-wide ">
+                  Engineer Graduate
+                </span>{" "}
                 and my passion for coding started since I was in school with
                 JavaScript and C++.{" "}
                 <span className="text-blue font-medium leading-loose tracking-wide ">
                   I sweat the details.
                 </span>{" "}
                 I&apos;m happiest when I&apos;m creating, learning, exploring
-                and thinking about how to make things better.{" "}
-                 User experience, writing clean accessible,
-                human code{" "}
-                <span className="text-blue font-medium leading-loose tracking-wide "> matter to me. </span>
+                and thinking about how to make things better. User experience,
+                writing clean accessible, human code{" "}
+                <span className="text-blue font-medium leading-loose tracking-wide ">
+                  {" "}
+                  matter to me.{" "}
+                </span>
                 And as someone who follows of{" "}
                 <span className="text-blue font-medium leading-loose tracking-wide ">
                   {" "}
                   John Maeda&apos;s Laws Of Simplicity,{" "}
                 </span>{" "}
                 I agree that{" "}
-                <span className="text-blue font-medium leading-loose tracking-wide ">less is more.</span>
+                <span className="text-blue font-medium leading-loose tracking-wide ">
+                  less is more.
+                </span>
               </p>
               <Link
                 href={`/bio`}

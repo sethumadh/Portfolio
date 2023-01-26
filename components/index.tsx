@@ -1,6 +1,4 @@
 export { default as Navbar} from "./Navbar"
-export { default as NavigationDots} from "./NavigationDots"
-export { default as Socialmedia} from "./Socialmedia"
 export { default as About} from "./About"
 export { default as Aboutme} from "./Aboutme"
 export { default as Works} from "./Works"

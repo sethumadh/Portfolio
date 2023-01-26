@@ -2,16 +2,7 @@ import React, { useState, useEffect } from "react"
 import Head from "next/head"
 import type { NextPage } from "next"
 
-import {
-  Navbar,
-  Socialmedia,
-  About,
-  Aboutme,
-  Works,
-  Contact,
-  Footer,
-  Testimonial,
-} from "../components"
+import { About, Aboutme, Works, Contact, Testimonial } from "../components"
 import { images } from "../constants"
 
 const Home: NextPage = () => {
@@ -34,8 +25,6 @@ const Home: NextPage = () => {
       <Head>
         <title>Sethu&apos;s Portfolio</title>
       </Head>
-
-      {/* <NavigationDots activePage={activePage} setActivePage={setActivePage} /> */}
 
       <About setActivePage={setActivePage} />
       <div id="About">

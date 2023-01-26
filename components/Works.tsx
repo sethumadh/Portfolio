@@ -4,7 +4,6 @@ import Image from "next/image"
 import Link from "next/link"
 
 import { images } from "../constants"
-import LineGradient from "./LineGradient"
 
 function Works() {
   const projectLinks = [
