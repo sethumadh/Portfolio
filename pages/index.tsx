@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"
 import Head from "next/head"
 import type { NextPage } from "next"
+import Image from "next/image"
 
 import { About, Aboutme, Works, Contact, Testimonial } from "../components"
 import { images } from "../constants"
@@ -24,6 +25,8 @@ const Home: NextPage = () => {
     <div className=" min-h-screen " id="Home">
       <Head>
         <title>Sethu&apos;s Portfolio</title>
+        <meta name="description" content="Full Stack Portfolio" />
+        <link rel="icon" href="/meteorrain.png" />
       </Head>
 
       <About setActivePage={setActivePage} />

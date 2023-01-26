@@ -34,7 +34,7 @@ function Testimonial() {
       href: "https://www.linkedin.com/in/adrianhajdin/",
       name: "Adrian Hadjin",
       title: " Founder & CEO ",
-      title1: " Founder & CEO - JavaScript Mastery",
+      title1: " Entrepreneur & GitHub Star",
       work: "Mentor for featured projects-Lyriks, Filmpire and Morent",
       work1: "Mentor- Lyriks, Morent & Hipnode Project",
       smallContent: ` "I am happy to recommend Sethumadhavan Kochukrishnan for his exceptional skills as a Full-Stack software engineer. Throughout my time with him on open-source projects, I was consistently impressed by Sethu's`,
@@ -93,13 +93,13 @@ function Testimonial() {
                     alt="profilpictureoftest"
                     className="rounded-full w-36 h-[144px] flex justify-center items-center mb-2"
                   />
-                  <h1 className="font-semibold text-xl mt-1 tracking-wide font-mada italic">
+                  <h1 className="font-semibold text-xl tracking-wide font-mada italic">
                     {link.name}
                   </h1>
-                  <h1 className="font-semibold text-xl mt-1 hidden md:block tracking-wide font-mada text-center text-blue">
+                  <h1 className="font-semibold text-md hidden md:block tracking-wide font-mada text-center text-blue">
                     {link.title1}
                   </h1>
-                  <h1 className="font-semibold text-xl mt-1 md:hidden tracking-wide font-mada text-center text-blue">
+                  <h1 className="font-semibold text-md md:hidden tracking-wide font-mada text-center text-blue">
                     {link.title1}
                   </h1>
                 </Link>

@@ -44,6 +44,7 @@ import sadya from "../assets/sadya.png"
 import filmpirelt from "../assets/filmpirelt.png"
 import lyrikslt from "../assets/lyrikslt.png"
 import morentlt from "../assets/morentlt.png"
+import meteorrain from "../assets/meteorrain.png"
 
 import contactProject from "../assets/contactProject.jpg"
 
@@ -95,5 +96,6 @@ export default {
   sadya,
   filmpirelt,
   lyrikslt,
-  morentlt
+  morentlt,
+  meteorrain
 }
