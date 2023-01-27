@@ -74,7 +74,7 @@ function Testimonial() {
             Nice Things
             <div className="h-[13.5px] w-[100%] bg-orange-600 absolute right-0 bottom-0 -z-30"></div>
           </div>
-            <div className=" text-2xl sm:text-4xl font-semibold tracking-wide max-w-max mx-auto md:mx-0 md:ml-8">  People Have said</div>
+            <div className=" text-2xl sm:text-4xl font-semibold tracking-wide max-w-max mx-auto md:mx-0 md:ml-8">  People Have Said</div>
         </div>
         <div className=" flex flex-col">
           {testimonialLinks.map((link, i) => (

@@ -47,7 +47,7 @@ const Contact = () => {
     {
       id: 4,
       child: (
-        <h1 className="font-bold text-4xl">
+        <h1 className="font-bold text-5xl pt-1">
           CV
         </h1>
       ),
