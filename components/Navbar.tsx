@@ -96,11 +96,7 @@ function Navbar({ activePage, setActivePage, isTopOfPage }: NavbarProps) {
           />
         )}
         {toggleMenu && (
-          <motion.nav
-            whileInView={{ x: [200, 0] }}
-            transition={{ duration: 0.85, ease: "easeOut" }}
-            className="md:hidden flex flex-col fixed top-0 z-20 right-0 bottom-0 min-h-screen  w-[200px] p-2 bg-mainbg1 bg-repeat "
-          >
+          <div className="md:hidden flex flex-col fixed top-0 z-20 right-0 bottom-0 min-h-screen  w-[200px] p-2 bg-mainbg1 bg-repeat ">
             <div className="cursor-pointer z-20 text-slate-700 flex justify-end">
               <FaTimes size={30} onClick={() => setToggleMenu(!toggleMenu)} />
             </div>
@@ -116,12 +112,8 @@ function Navbar({ activePage, setActivePage, isTopOfPage }: NavbarProps) {
                       link.nav != "Resume" ? `/#${link.href}` : `${link.href}`
                     }`}
                     target={link.target}
-                    // smooth={true}
-                    // offset={-100}
-                    // duration={500}
                     onClick={() => {
                       setToggleMenu(!toggleMenu)
-                      // setActivePage(link)
                     }}
                   >
                     {link.nav}
@@ -129,7 +121,7 @@ function Navbar({ activePage, setActivePage, isTopOfPage }: NavbarProps) {
                 </li>
               ))}
             </ul>
-          </motion.nav>
+          </div>
         )}
       </div>
     </motion.nav>
