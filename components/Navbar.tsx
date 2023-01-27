@@ -14,15 +14,15 @@ type NavbarProps = {
 }
 const links = ["Home", "About", "Works", "Resume", "Contact"]
 const navLinks = [
-  { nav: "Home",href:"Home" },
-  { nav: "About",href:"About" },
-  { nav: "Works",href:"Works" },
+  { nav: "Home", href: "Home" },
+  { nav: "About", href: "About" },
+  { nav: "Works", href: "Works" },
   {
     nav: "Resume",
     href: "https://drive.google.com/file/d/1cQPTOpd7iCcSG9vqe2pWCjctHVdlJ6im/view?usp=share_link",
     target: "_blank",
   },
-  { nav: "Contact",href:"Contact" },
+  { nav: "Contact", href: "Contact" },
 ]
 
 function Navbar({ activePage, setActivePage, isTopOfPage }: NavbarProps) {
@@ -69,7 +69,9 @@ function Navbar({ activePage, setActivePage, isTopOfPage }: NavbarProps) {
               className="font-mada  text-white xl:pl-20 lg:pl-16 md:pl-12 cursor-pointer capitalize font-medium tracking-[2px] hover:scale-110 transition duration-250 text-2xl"
             >
               <Link
-                href={`${link.nav!="Resume"?`/#${link.href}`:`${link.href}`}`}
+                href={`${
+                  link.nav != "Resume" ? `/#${link.href}` : `${link.href}`
+                }`}
                 target={link.target}
                 // smooth={true}
                 // offset={-100}
@@ -95,9 +97,9 @@ function Navbar({ activePage, setActivePage, isTopOfPage }: NavbarProps) {
         )}
         {toggleMenu && (
           <motion.nav
-            // whileInView={{ x: [200, 0] }}
-            // transition={{ duration: 0.85, ease: "easeOut" }}
-            className="md:hidden flex flex-col fixed top-0 z-20 right-0 bottom-0 min-h-screen backdrop-blur-lg w-[200px] p-2 bg-mainbg1 bg-repeat "
+            whileInView={{ x: [200, 0] }}
+            transition={{ duration: 0.85, ease: "easeOut" }}
+            className="md:hidden flex flex-col fixed top-0 z-20 right-0 bottom-0 min-h-screen  w-[200px] p-2 bg-mainbg1 bg-repeat "
           >
             <div className="cursor-pointer z-20 text-slate-700 flex justify-end">
               <FaTimes size={30} onClick={() => setToggleMenu(!toggleMenu)} />
@@ -110,7 +112,9 @@ function Navbar({ activePage, setActivePage, isTopOfPage }: NavbarProps) {
                   className=" cursor-pointer capitalize font-medium hover:scale-105 duration-250 z-20 "
                 >
                   <Link
-                    href={`${link.nav!="Resume"?`/#${link.href}`:`${link.href}`}`}
+                    href={`${
+                      link.nav != "Resume" ? `/#${link.href}` : `${link.href}`
+                    }`}
                     target={link.target}
                     // smooth={true}
                     // offset={-100}
@@ -119,7 +123,6 @@ function Navbar({ activePage, setActivePage, isTopOfPage }: NavbarProps) {
                       setToggleMenu(!toggleMenu)
                       // setActivePage(link)
                     }}
-                    
                   >
                     {link.nav}
                   </Link>
