@@ -139,13 +139,13 @@ function About({ setActivePage }: AboutProps) {
             </span>{" "}
             <div className="flex items-center mt-4 pt-2">
               <span
-                className={`animate-words-anim inline-block mr-4 text-2xl md:text-3xl lg:text-4xl xl:text-5xl`}
+                className={` inline-block mr-4 text-2xl md:text-3xl lg:text-4xl xl:text-5xl`}
               >
                 {item}{" "}
               </span>
-              <div className={`animate-words-anim `}>
-                {/* <Image src={icon} width={30} alt="icon" /> */}
-              </div>
+              {/* <div className={`animate-words-anim `}>
+                <Image src={icon} width={30} alt="icon" />
+              </div> */}
             </div>
           </div>
           <div className="flex flex-row justify-start items-center mt-4 ">

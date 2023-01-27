@@ -51,22 +51,22 @@ module.exports = {
         words: {
           "0%": {
             opacity: 0,
-            filter: "blur(10px)",
-            transform: "translateY(0px) ",
+            // filter: "blur(0px)",
+            // transform: "translateY(0px) ",
           },
-          "25%": {
-            opacity: 1,
-            filter: "blur(0px)",
-            transform: "translateY(0px) ",
-          },
-          "75%": {
+          // "25%": {
+          //   opacity: 1,
+          //   // filter: "blur(0px)",
+          //   // transform: "translateY(0px) ",
+          // },
+          "50%": {
             opacity: 1,
             filter: "blur(0px)",
             transform: "translateY(0px) ",
           },
           "100%": {
             opacity: 0,
-            filter: "blur(20px)",
+            filter: "blur(0px)",
             // transform: "translateY(-100px)",
           },
         },
