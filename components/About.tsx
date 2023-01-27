@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState,useEffect } from "react"
 import { motion } from "framer-motion"
 import { Dispatch, SetStateAction } from "react"
 import { Icon } from "react-icons-kit"
@@ -71,22 +71,33 @@ function About({ setActivePage }: AboutProps) {
   const [item, setItem] = useState("autodidact 🧑🏻‍🔧")
   const [icon, setIcon] = useState(images.learner)
 
-  useInterval(
-    () => {
-      // Your custom logic here
-      setItem(words[count].w)
+  // useInterval(
+  //   () => {
+  //     // Your custom logic here
+  //     setItem(words[count].w)
+  //     setIcon(words[count].src)
+  //     // console.log(item,count)
+  //     setCount(count + 1)
+
+  //     if (count > 4) {
+  //       setCount(0)
+  //     }
+  //   },
+
+  //   // Delay in milliseconds or null to stop it
+  //   isPlaying ? delay : null
+  // )
+
+
+useEffect(()=>{
+  const interval=setInterval(()=>{
+    setItem(words[count].w)
       setIcon(words[count].src)
       // console.log(item,count)
       setCount(count + 1)
-
-      if (count > 4) {
-        setCount(0)
-      }
-    },
-    // Delay in milliseconds or null to stop it
-    isPlaying ? delay : null
-  )
-
+  },2500)
+  return ()=>clearInterval(interval)
+},[words])
   return (
     <section className=" min-h-screen flex flex-col justify-center items-center bg-gray-900 bg-no-repeat pt-24">
       <motion.div
