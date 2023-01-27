@@ -51,8 +51,8 @@ module.exports = {
         words: {
           "0%": {
             opacity: 0,
-            filter: "blur(50px)",
-            transform: "translateY(-25px) ",
+            filter: "blur(10px)",
+            transform: "translateY(0px) ",
           },
           "25%": {
             opacity: 1,
