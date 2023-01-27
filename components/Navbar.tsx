@@ -49,7 +49,7 @@ function Navbar({ activePage, setActivePage, isTopOfPage }: NavbarProps) {
           : "top-0"
       } transition-all duration-750`}
     >
-      <div className="w-[95%] max-w-7xl flex flex-row items-center justify-between mx-auto">
+      <div className="w-[95%] max-w-7xl flex flex-row items-center justify-between mx-auto relative">
         <Link
           className="signature text-white md:text-6xl text-4xl font-playfair font-semibold cursor-pointer"
           href="/"
