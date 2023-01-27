@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect, useRef } from "react"
 import { motion } from "framer-motion"
 import { Dispatch, SetStateAction } from "react"
 import { Icon } from "react-icons-kit"
@@ -63,41 +63,52 @@ function About({ setActivePage }: AboutProps) {
   ]
 
   // The counter
+
   const [count, setCount] = useState<number>(0)
   // Dynamic delay
-  const [delay, setDelay] = useState<number>(2500)
+  const [delay, setDelay] = useState<number|null>(3000)
   // ON/OFF
   const [isPlaying, setPlaying] = useState<boolean>(true)
-  const [item, setItem] = useState("autodidact 🧑🏻‍🔧")
+  const [item, setItem] = useState<string|null>("an autodidact 🧑🏻‍🔧")
   const [icon, setIcon] = useState(images.learner)
+  const ref=useRef(null)
 
-  // useInterval(
-  //   () => {
-  //     // Your custom logic here
-  //     setItem(words[count].w)
-  //     setIcon(words[count].src)
-  //     // console.log(item,count)
-  //     setCount(count + 1)
+  // useEffect(()=>{
+  //   const interval = setInterval(() => {
+  //     setPlaying(true)
+  //   },1000)
+  //   return () => clearInterval(interval)
+  // },[])
 
-  //     if (count > 4) {
-  //       setCount(0)
-  //     }
-  //   },
-
-  //   // Delay in milliseconds or null to stop it
-  //   isPlaying ? delay : null
-  // )
-
-  useEffect(() => {
-    const interval = setInterval(() => {
+  useInterval(
+    () => {
+      if(ref?.current){
+      // Your custom logic here
       setItem(words[count].w)
-      setCount(count + 1)
+      setIcon(words[count].src)
+      // console.log(item,count)
+      setCount(count + 1)}
+
       if (count > 5) {
         setCount(0)
       }
-    }, 3000)
-    return () => clearInterval(interval)
-  }, [words])
+    },
+
+    // Delay in milliseconds or null to stop it
+    isPlaying ? delay : null
+  )
+
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setItem(words[count].w)
+  //     setCount(count + 1)
+  //     if (count > 5) {
+  //       setCount(0)
+  //     }
+  //   }, 3000)
+  //   return () => clearInterval(interval)
+  // }, [words])
+
   return (
     <section className=" min-h-screen flex flex-col justify-center items-center bg-gray-900 bg-no-repeat pt-24">
       <motion.div
@@ -139,7 +150,8 @@ function About({ setActivePage }: AboutProps) {
             </span>{" "}
             <div className="flex items-center mt-4 pt-2">
               <span
-                className={` inline-block mr-4 text-2xl md:text-3xl lg:text-4xl xl:text-5xl`}
+              ref={ref}
+                className={`animate-words-anim inline-block mr-4 text-2xl md:text-3xl lg:text-4xl xl:text-5xl`}
               >
                 {item}{" "}
               </span>
