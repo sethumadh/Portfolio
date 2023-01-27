@@ -20,7 +20,7 @@ const Contact = () => {
       ),
       href: "https://linkedin.com/in/sethumadh",
       url: "https://linkedin.com/in/sethumadh",
-      style: "rounded-tr-md bg-blue",
+      style: "",
     },
     {
       id: 2,
@@ -31,7 +31,7 @@ const Contact = () => {
       ),
       href: "https://github.com/sethumadh",
       url: "https://github.com/sethumadh",
-      style: "bg-[#333333]",
+      style: "",
     },
     {
       id: 3,
@@ -42,7 +42,7 @@ const Contact = () => {
       ),
       href: "mailto:sethumadh@gmail.com",
       url: "mailto:sethumadh@gmail.co",
-      style: "bg-[#6fc2b0]",
+      style: "",
     },
     {
       id: 4,
@@ -53,7 +53,7 @@ const Contact = () => {
       ),
       href: "https://drive.google.com/file/d/1y6HorM1qunKMRlCfTIX54pobqkoiyJDq/view?usp=share_link",
       url: "mailto:sethumadh@gmail.co",
-      style: "bg-[#6fc2b0]",
+      style: "animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75",
     },
   ]
 
@@ -124,7 +124,7 @@ const Contact = () => {
                     href={link.href}
                     target="_blank"
                     key={i}
-                    className="w-8 md:w-12 mx-3 cursor-pointer text-slate-500 hover:text-orange-600 transition-all delay-200 flex justify-center items-center"
+                    className={` w-8 md:w-12 mx-3 cursor-pointer text-slate-500 hover:text-orange-600 transition-all delay-200 flex justify-center items-center`}
                   >
                     {link.child}
                   </Link>

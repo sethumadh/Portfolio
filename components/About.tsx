@@ -66,7 +66,7 @@ function About({ setActivePage }: AboutProps) {
 
   const [count, setCount] = useState<number>(0)
   // Dynamic delay
-  const [delay, setDelay] = useState<number|null>(3000)
+  const [delay, setDelay] = useState<number|null>(3500)
   // ON/OFF
   const [isPlaying, setPlaying] = useState<boolean>(true)
   const [item, setItem] = useState<string|null>("an autodidact 🧑🏻‍🔧")

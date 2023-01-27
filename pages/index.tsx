@@ -22,7 +22,7 @@ const Home: NextPage = () => {
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
   return (
-    <div className=" min-h-screen " id="Home">
+    <div className=" min-h-screen scroll-smooth" id="Home">
       <Head>
         <title>Sethu&apos;s Portfolio</title>
         <meta name="description" content="Full Stack Portfolio" />
