@@ -90,7 +90,7 @@ function Bio({}: Props) {
           </strong>
           which looked stunning (younger me thought so) with my sick{" "}
           <strong className="font-bold text-xl">html / CSS skills </strong> and
-          occasionaly built sites using Wordpress.
+          occasionally built sites using Wordpress.
         </p>
         <br />
         <p className="font-mulish font-light text-xl leading-loose tracking-wide">
@@ -99,7 +99,7 @@ function Bio({}: Props) {
             Since then I haven’t stopped learning and creating.
           </strong>{" "}
           I am involved in, photography, electronic engineering, programming,
-          video productiona and short film post-production.
+          video production and short film post-production.
           <br /> <br /> I have been{" "}
           <strong className="font-bold text-xl">
             increasingly working on software development
@@ -149,7 +149,7 @@ function Bio({}: Props) {
           As a person
         </h1>
         <p className="font-mulish font-light text-xl leading-loose tracking-wide">
-          If I had to describe myself in one word, it would be{" "}
+          If I have to describe myself in one word, it would be{" "}
           <strong className="font-bold text-xl">resourceful</strong> . I’ll take
           a problem, break it into smaller bits and find myself a solution.
           Creativity and humor has helped me{" "}
@@ -178,7 +178,7 @@ function Bio({}: Props) {
           <strong className="font-bold text-xl">
             technically oriented people{" "}
           </strong>{" "}
-          of the team as well as the{" "}
+          of the team and{" "}
           <strong className="font-bold text-xl">
             artistically oriented ones.
           </strong>
