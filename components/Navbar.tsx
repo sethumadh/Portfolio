@@ -97,7 +97,7 @@ function Navbar({ activePage, setActivePage, isTopOfPage }: NavbarProps) {
           <motion.nav
             // whileInView={{ x: [200, 0] }}
             // transition={{ duration: 0.85, ease: "easeOut" }}
-            className="md:hidden flex flex-col fixed top-0 right-0 bottom-0 min-h-screen w-[200px] p-2 bg-mainbg1 bg-repeat "
+            className="md:hidden flex flex-col fixed top-0 z-30 right-0 bottom-0 min-h-screen w-[200px] p-2 bg-mainbg1 bg-repeat "
           >
             <div className="cursor-pointer z-20 text-slate-700 flex justify-end">
               <FaTimes size={30} onClick={() => setToggleMenu(!toggleMenu)} />
