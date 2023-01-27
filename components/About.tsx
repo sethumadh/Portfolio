@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from "react"
+import React, { useState, useEffect } from "react"
 import { motion } from "framer-motion"
 import { Dispatch, SetStateAction } from "react"
 import { Icon } from "react-icons-kit"
@@ -88,16 +88,16 @@ function About({ setActivePage }: AboutProps) {
   //   isPlaying ? delay : null
   // )
 
-
-useEffect(()=>{
-  const interval=setInterval(()=>{
-    setItem(words[count].w)
-      setIcon(words[count].src)
-      // console.log(item,count)
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setItem(words[count].w)
       setCount(count + 1)
-  },2500)
-  return ()=>clearInterval(interval)
-},[words])
+      if (count > 5) {
+        setCount(0)
+      }
+    }, 3000)
+    return () => clearInterval(interval)
+  }, [words])
   return (
     <section className=" min-h-screen flex flex-col justify-center items-center bg-gray-900 bg-no-repeat pt-24">
       <motion.div
