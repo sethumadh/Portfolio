@@ -96,7 +96,7 @@ function Navbar({ activePage, setActivePage, isTopOfPage }: NavbarProps) {
           />
         )}
         {toggleMenu && (
-          <div className="md:hidden flex flex-col fixed top-0 z-20 right-0 bottom-0 min-h-screen  w-[200px] p-2 bg-mainbg1 bg-repeat ">
+          <div  style={{background:"orange"}} className="sidebar text-white  md:hidden flex flex-col fixed top-0 z-20 right-0 bottom-0 min-h-screen  w-[200px] p-2 bg-mainbg1 bg-repeat ">
             <div className="cursor-pointer z-20 text-slate-700 flex justify-end">
               <FaTimes size={30} onClick={() => setToggleMenu(!toggleMenu)} />
             </div>
@@ -105,7 +105,7 @@ function Navbar({ activePage, setActivePage, isTopOfPage }: NavbarProps) {
               {navLinks.map((link, i) => (
                 <li
                   key={i}
-                  className=" cursor-pointer capitalize font-medium hover:scale-105 duration-250 z-20 "
+                  className=" cursor-pointer capitalize font-bold hover:scale-105 duration-250 z-20 "
                 >
                   <Link
                     href={`${
