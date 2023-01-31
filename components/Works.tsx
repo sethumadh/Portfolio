@@ -18,7 +18,7 @@ function Works() {
       gitUrl: "https://github.com/sethumadh/Modern-Music-Player",
     },
     {
-      src: images.filmpirelt  ,
+      src: images.filmpirelt,
       title: "Filmpire",
       subtitle: "- World of Movies",
       role: "Front End React Js Developer",
@@ -109,14 +109,14 @@ function Works() {
                     Details
                   </Link>
                   <Link
-                    href={`/project/${link.title}`}
+                    href={link.gitUrl}
                     className="mr-8 text-sm md:text-base relative -top-1 -left-1 bg-orange-700 py-2.5 px-3 md:px-5 font-medium uppercase text-white transition-all before:absolute before:top-2 before:left-2 before:-z-[1] before:h-full before:w-full before:border-2 before:border-gray-700 before:transition-all before:content-[''] hover:top-0 hover:left-0 before:hover:top-0 before:hover:left-0 duration-300"
                   >
                     Github
                   </Link>
                   <Link
                     target={`_blank`}
-                    href={link.gitUrl}
+                    href={link.liveUrl}
                     className="relative text-sm md:text-base -top-1 -left-1 bg-orange-700 py-2.5 px-3 md:px-5 font-medium uppercase text-white transition-all before:absolute before:top-2 before:left-2 before:-z-[1] before:h-full before:w-full before:border-2 before:border-gray-700 before:transition-all before:content-[''] hover:top-0 hover:left-0 before:hover:top-0 before:hover:left-0 duration-300"
                   >
                     Demo
@@ -124,9 +124,13 @@ function Works() {
                 </div>
               </div>
 
-              <Link href={link.liveUrl} target="_blank" className=" w-full max-w-xl pb-4 md:py-4 mx-auto my-auto h-full md:w-xl flex items-center ">
+              <Link
+                href={link.liveUrl}
+                target="_blank"
+                className=" w-full max-w-xl pb-4 md:py-4 mx-auto my-auto h-full md:w-xl flex items-center "
+              >
                 <Image src={link.src} alt="music" className="w-full rounded" />
-              </Link >
+              </Link>
             </div>
           ))}
         </div>
