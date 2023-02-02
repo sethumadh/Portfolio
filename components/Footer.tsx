@@ -22,7 +22,7 @@ const Footer = () => {
               SethuMadhavan (aka Sethu)
             </Link>
             <p className="font-playfair text-xs md:text-lg font-semibold w-full flex justify-center ">
-              ©2023 Powered by Next JS, TypeScript & Tailwind.
+              ©2023 Made with Next JS, TypeScript & Tailwind.
             </p>
       </div>
     </motion.footer>

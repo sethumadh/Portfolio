@@ -59,7 +59,7 @@ function Navbar({ activePage, setActivePage, isTopOfPage }: NavbarProps) {
         >
           <div className="font-mada text-3xl relative">
             Sethu
-            <div className=" h-[10.5px] w-[100%] bg-orange-600 absolute right-0 bottom-1 -z-30"></div>
+            <div className=" h-[10.5px] w-[100%] bg-orange-500 absolute right-0 bottom-1 -z-30"></div>
           </div>
         </Link>
         <ul className="links hidden w-full md:flex md:flex-row md:items-center md:justify-end  ">
