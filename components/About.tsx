@@ -66,12 +66,12 @@ function About({ setActivePage }: AboutProps) {
 
   const [count, setCount] = useState<number>(0)
   // Dynamic delay
-  const [delay, setDelay] = useState<number|null>(3500)
+  const [delay, setDelay] = useState<number | null>(3500)
   // ON/OFF
   const [isPlaying, setPlaying] = useState<boolean>(true)
-  const [item, setItem] = useState<string|null>("an autodidact 🧑🏻‍🔧")
+  const [item, setItem] = useState<string | null>("an autodidact 🧑🏻‍🔧")
   const [icon, setIcon] = useState(images.learner)
-  const ref=useRef(null)
+  const ref = useRef(null)
 
   // useEffect(()=>{
   //   const interval = setInterval(() => {
@@ -82,12 +82,13 @@ function About({ setActivePage }: AboutProps) {
 
   useInterval(
     () => {
-      if(ref?.current){
-      // Your custom logic here
-      setItem(words[count].w)
-      setIcon(words[count].src)
-      // console.log(item,count)
-      setCount(count + 1)}
+      if (ref?.current) {
+        // Your custom logic here
+        setItem(words[count].w)
+        setIcon(words[count].src)
+        // console.log(item,count)
+        setCount(count + 1)
+      }
 
       if (count > 5) {
         setCount(0)
@@ -110,7 +111,7 @@ function About({ setActivePage }: AboutProps) {
   // }, [words])
 
   return (
-    <section className=" min-h-screen flex flex-col justify-center items-center bg-gray-900 bg-no-repeat pt-24">
+    <section className=" min-h-screen flex flex-col justify-center items-center bg-gray-800 bg-no-repeat pt-24">
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -150,7 +151,7 @@ function About({ setActivePage }: AboutProps) {
             </span>{" "}
             <div className="flex items-center mt-4 pt-2">
               <span
-              ref={ref}
+                ref={ref}
                 className={`animate-words-anim inline-block mr-4 text-2xl md:text-3xl lg:text-4xl xl:text-5xl`}
               >
                 {item}{" "}
