@@ -111,7 +111,7 @@ function About({ setActivePage }: AboutProps) {
   // }, [words])
 
   return (
-    <section className=" min-h-screen flex flex-col justify-center items-center bg-gray-800 bg-no-repeat pt-24">
+    <section className=" min-h-screen flex flex-col justify-center items-center bg-gray-900 bg-no-repeat pt-24">
       <motion.div
         initial="hidden"
         whileInView="visible"
