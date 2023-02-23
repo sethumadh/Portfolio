@@ -19,7 +19,7 @@ const navLinks = [
   { nav: "Works", href: "Works" },
   {
     nav: "Resume",
-    href: "https://drive.google.com/file/d/1cQPTOpd7iCcSG9vqe2pWCjctHVdlJ6im/view?usp=share_link",
+    href: "https://drive.google.com/file/d/1APrN7MNMLj3OrhNYrL_s7HEGm364kwUc/view?usp=share_link",
     target: "_blank",
   },
   { nav: "Contact", href: "Contact" },
