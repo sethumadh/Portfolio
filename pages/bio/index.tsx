@@ -66,7 +66,7 @@ function Bio({}: Props) {
           Looking for my{" "}
           <Link
             href={
-              "https://drive.google.com/file/d/1APrN7MNMLj3OrhNYrL_s7HEGm364kwUc/view?usp=share_link"
+              "https://drive.google.com/file/d/1ysEaMT_oJVEhPk8_ocheabN7t2AcNVqd/view?usp=share_link"
             }
             target="_blank"
             className="text-orange-500 font-bold pt-4"
