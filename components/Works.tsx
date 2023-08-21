@@ -8,14 +8,14 @@ import { images } from "../constants"
 function Works() {
   const projectLinks = [
     {
-      src: images.lyrikslt,
-      title: "Lyriks",
-      subtitle: "- Modern Music Player",
-      role: "Front End Next Js Developer/Team Lead",
-      tech: [" Next Js", "Tailwind", "Redux Toolkit", "Redux Toolkit Query"],
-      body: "Assembled and lead a team of 3 to create the core functionalities of the Music Player App and integrate third part APIs called Bug Hunter Lyriks app. The goal is to fetch as much APIs and put it into a well-designed web application.Implemented CI/CD pipeline with code linting and preview deploys.",
-      liveUrl: "https://bughunters-lyriks.vercel.app/",
-      gitUrl: "https://github.com/sethumadh/Modern-Music-Player",
+      src: images.FTlt,
+      title: "EduProvide",
+      subtitle: "- Admin Dashboard",
+      role: "Full Stack/Team Lead",
+      tech: [" React Js", "Tailwind", "Redux Toolkit", "Typescript+zod","Express", "Mongo","jwt custom auth", "Jest +RTL", "Unit Testing"],
+      body: "Freelance Contract to create the core functionalities of an admin Dashboard for a startup in India App and integrate APIs from an existing DB. The goal is to fetch as much APIs and put it into a well-designed web application.Implemented CI/CD pipeline with code linting and preview deploys.",
+      liveUrl: "https://ft-dashboard-app.onrender.com/",
+      gitUrl: "https://github.com/sethumadh/FT-Dashboard/",
     },
     {
       src: images.filmpirelt,

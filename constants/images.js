@@ -43,13 +43,17 @@ import coffeemug from "../assets/coffeemug.svg"
 import sadya from "../assets/sadya.png"
 import filmpirelt from "../assets/filmpirelt.png"
 import lyrikslt from "../assets/lyrikslt.png"
+import FTlt from "../assets/FTlt.png"
 import morentlt from "../assets/morentlt.png"
 import meteorrain from "../assets/meteorrain.png"
-
+import ftgraph from "../assets/ftgraph.png"
+import ftstdDetails from "../assets/ftstdDetails.png"
 import contactProject from "../assets/contactProject.jpg"
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
+  ftgraph,
+  ftstdDetails,
   js,
   mongodb,
   next,
@@ -97,5 +101,6 @@ export default {
   filmpirelt,
   lyrikslt,
   morentlt,
-  meteorrain
+  meteorrain,
+  FTlt,
 }
