@@ -54,81 +54,123 @@ function ProjectDetails({}: Props) {
       imageDesc: `Godfather movie fetched using search functionality`,
     },
   ]
-  const Lyriks = [
+  const EduProvide = [
     {
-      summary: `Assembled and lead a team of 3 to create the core functionalities
-        of the Music Player App and integrate third part APIs called Bug
-        Hunter Lyriks app. The goal is to fetch as much APIs and put it
-        into a well-designed web application.Implemented CI/CD pipeline
-        with code linting and preview deploys.`,
+      summary: `Freelance Contract to create the core functionalities of an admin Dashboard for a startup which focuses on providing soft skills and they need a dashboard for their vendors/instructors,in India 
+      and integrate APIs from an existing DB. The goal is to fetch as much APIs and put it into a well-designed web application.Implemented CI/CD pipeline with code linting and preview deploys.`,
       type: [
         "Open Source",
         "Educational",
         "Instructional",
-        "Entertainment",
+        "Dashboard",
         "Modern Design",
         "Database",
-        "Music",
+        "Admin",
       ],
-      landingImage: images.musicplayer,
-      objective: ` The objective is to code a beautifully designed Modern Music
-      player dubbed 'Lyriks' App. This Application has to be
-      delivered in one month time. The team consisted of 4 members and
+      landingImage: images.ftgraph,
+      objective: ` The objective is to code a beautifully designed Modern Dasboard dubbed 'Future Tayare App. This Application has to be
+      delivered in 3 weeks time. The team consisted of 2 members and
       were given free hand to choose the tech stack. The app should have
-      search functionality , a music player which can be a react-library
-      npm package or custom made and should render songs related to the
-      current on playing. The app should have displayed different genre
-      listed in the front page`,
+      search functionality to search students , see the studenst progress and what are the different course assigned to students. Used advanced UI kit to create the 
+      acordion effect to display student. Custom jwt authentication is created and designed by me which uses an access token with short expiry and then use a refresh token to
+      get a new acces token. The Database was already in existence for student data and ws provided by the company. Therefore integrated the existing apis to the built ui components and then added custom jwt auth in mongo db as a separate collection/document.`,
       webStack:
-        "Used Next.js for better SEO and server-side rendering to load pages leading to faster page loading times. \n Designed the architecture and lead a team of 4 developers to create core features and integrate third party APIs -Shazam Core API to dynamically render the obtained JSON. Implemented Redux Toolkit to maintain a centralized state and keep changes mapped to UI through a complex and dynamic frontend allowing for connection to multiple APIs. Customized 10+ endpoints using Redux Toolkit Query and cache data for better user experience. Designed UI using Tailwind CSS with accessibility and responsiveness on all devices.	Worked on different branches, making pull requests to resolve merge conflicts and maintain a smooth git workflow.	Implemented CI/CD pipeline with code linting and preview deploys.",
+        "Used React.js for faster build with SPA for rendering to load pages leading to faster page loading times. \n Designed the architecture and lead a team of 2 developers to create core features and integrate third party UI kits like Shadcn, headless UI etc. Implemented Redux Toolkit to maintain a centralized client side state and keep changes mapped to UI through a complex and dynamic frontend allowing for connection to multiple APIs. Customized 10+ endpoints using Redux Toolkit Query and cache data for better user experience. Designed UI using Tailwind CSS with accessibility and responsiveness on all devices.	Worked on different branches, making pull requests to resolve merge conflicts and maintain a smooth git workflow.	Implemented CI/CD pipeline with code linting and preview deploys.",
       stack: [
-        "Next Js",
+        "reac Js",
         "Tailwind",
         "Redux Toolkit",
         "Redux Toolkit Query",
         "eslint",
       ],
-      gitUrl: "https://github.com/sethumadh/Modern-Music-Player",
-      liveUrl: "https://bughunters-lyriks.vercel.app/",
+      liveUrl: "https://ft-dashboard-app.onrender.com/",
+      gitUrl: "https://github.com/sethumadh/FT-Dashboard/",
       learnings: ` We as a team worked remotely on the project as open source using
       Github. We wire framed the design using figma
-      and the overall application architecture and file folder. I had my
-     ${(
-       <Link
-         href={"/project/Filmpire"}
-         className="text-base font-medium text-orange-500 px-2"
-       >
-         Filmpire Project
-       </Link>
-     )}
-      as experience. As a team assigned tasks to each member and
+      and the overall application architecture and file folder. As a team assigned tasks to each member and
       I was assigned with coding the state management using Redux
       Toolkit and creating custom end points using redux toolkit query.
-      We decided to work on our tasks and come back to discuss the
-      progress in 10 days. But unfortunately as 2 weeks went by from the
-      start, for personal and other reasons 3 of our members had to
-      leave project. Which meant I was the only member left in the team.
-      And it was only 12 days left for showcasing the project.
-      Neveretheless I decided to showcase the project and went back to
-      the drawing board and regrouped myself and took some tough decisions in
-      axing some of the functionalities we had planned on doing. This
-      was to ensure to create a minimum viabale project - MVP and to
-      showcase to our mentors within deadline. I had a temporary design made which I
-       was using to code and test the state management and
-      custom endpoints using redux toolkit query. I made some face-lifts
-      on this design and worked on other functionalities which were initially
-      assigned to other members like creating the music player, genres listing search function and
-       overall design and coded for the next 8 days through
-      and through. I was able to showcase the music app albeit with some
-      design flaws but a great working music app with search functions,
-      genres and related songs displayed and also a custom made music
-      player. I took this challenge as an opportunity where I could
-      learn and code those core concepts which were otherwise assigned
-      to other memebers.`,
-      bottomImage: images.lk,
-      imageDesc: ` Hip Hop genre fetched using search functionality`,
+      This was the time I implemented a custom jwt authenticationn system , which I have made so that I can use it as a starter code for my upcoming
+      projects. Also used Shadcn UI which is UI kit based on tailwind which improved my skillset`,
+      bottomImage: images.ftstdDetails,
+      imageDesc: `Student Details`,
     },
   ]
+  // const Admin = [
+  //   {
+  //     summary: `Assembled and lead a team of 3 to create the core functionalities
+  //       of the Music Player App and integrate third part APIs called Bug
+  //       Hunter Lyriks app. The goal is to fetch as much APIs and put it
+  //       into a well-designed web application.Implemented CI/CD pipeline
+  //       with code linting and preview deploys.`,
+  //     type: [
+  //       "Open Source",
+  //       "Educational",
+  //       "Instructional",
+  //       "Entertainment",
+  //       "Modern Design",
+  //       "Database",
+  //       "Music",
+  //     ],
+  //     landingImage: images.musicplayer,
+  //     objective: ` The objective is to code a beautifully designed Modern Music
+  //     player dubbed 'Lyriks' App. This Application has to be
+  //     delivered in one month time. The team consisted of 4 members and
+  //     were given free hand to choose the tech stack. The app should have
+  //     search functionality , a music player which can be a react-library
+  //     npm package or custom made and should render songs related to the
+  //     current on playing. The app should have displayed different genre
+  //     listed in the front page`,
+  //     webStack:
+  //       "Used Next.js for better SEO and server-side rendering to load pages leading to faster page loading times. \n Designed the architecture and lead a team of 4 developers to create core features and integrate third party APIs -Shazam Core API to dynamically render the obtained JSON. Implemented Redux Toolkit to maintain a centralized state and keep changes mapped to UI through a complex and dynamic frontend allowing for connection to multiple APIs. Customized 10+ endpoints using Redux Toolkit Query and cache data for better user experience. Designed UI using Tailwind CSS with accessibility and responsiveness on all devices.	Worked on different branches, making pull requests to resolve merge conflicts and maintain a smooth git workflow.	Implemented CI/CD pipeline with code linting and preview deploys.",
+  //     stack: [
+  //       "Next Js",
+  //       "Tailwind",
+  //       "Redux Toolkit",
+  //       "Redux Toolkit Query",
+  //       "eslint",
+  //     ],
+  //     gitUrl: "https://github.com/sethumadh/Modern-Music-Player",
+  //     liveUrl: "https://bughunters-lyriks.vercel.app/",
+  //     learnings: ` We as a team worked remotely on the project as open source using
+  //     Github. We wire framed the design using figma
+  //     and the overall application architecture and file folder. I had my
+  //    ${(
+  //      <Link
+  //        href={"/project/Filmpire"}
+  //        className="text-base font-medium text-orange-500 px-2"
+  //      >
+  //        Filmpire Project
+  //      </Link>
+  //    )}
+  //     as experience. As a team assigned tasks to each member and
+  //     I was assigned with coding the state management using Redux
+  //     Toolkit and creating custom end points using redux toolkit query.
+  //     We decided to work on our tasks and come back to discuss the
+  //     progress in 10 days. But unfortunately as 2 weeks went by from the
+  //     start, for personal and other reasons 3 of our members had to
+  //     leave project. Which meant I was the only member left in the team.
+  //     And it was only 12 days left for showcasing the project.
+  //     Neveretheless I decided to showcase the project and went back to
+  //     the drawing board and regrouped myself and took some tough decisions in
+  //     axing some of the functionalities we had planned on doing. This
+  //     was to ensure to create a minimum viabale project - MVP and to
+  //     showcase to our mentors within deadline. I had a temporary design made which I
+  //      was using to code and test the state management and
+  //     custom endpoints using redux toolkit query. I made some face-lifts
+  //     on this design and worked on other functionalities which were initially
+  //     assigned to other members like creating the music player, genres listing search function and
+  //      overall design and coded for the next 8 days through
+  //     and through. I was able to showcase the music app albeit with some
+  //     design flaws but a great working music app with search functions,
+  //     genres and related songs displayed and also a custom made music
+  //     player. I took this challenge as an opportunity where I could
+  //     learn and code those core concepts which were otherwise assigned
+  //     to other memebers.`,
+  //     bottomImage: images.lk,
+  //     imageDesc: ` Hip Hop genre fetched using search functionality`,
+  //   },
+  // ]
   const Morent = [
     {
       summary: `A Core Member of a 3 member team responsible for creating core
@@ -331,7 +373,7 @@ function ProjectDetails({}: Props) {
 
       {/*  Lyriks application */}
 
-      {projectId == "Lyriks" && (
+      {projectId == "EduProvide" && (
         <motion.article
           initial="hidden"
           whileInView="visible"
@@ -353,7 +395,7 @@ function ProjectDetails({}: Props) {
             <div className="mb-2">1 minute read</div>
             <div className="leading-loose tracking-wide mb-2 md:mb-4">
               {/* summary*/}
-              {Lyriks[0].summary}
+              {EduProvide[0].summary}
             </div>
             <div className=" mb-4">
               <div className="flex justify-center md:justify-start text-2xl sm:text-4xl font-semibold tracking-wide mb-1 md:mb-4 pt-8 pb-4">
@@ -364,7 +406,7 @@ function ProjectDetails({}: Props) {
               </div>
               <div className="flex justify-center md:justify-start flex-wrap">
                 {/* Project Type */}
-                {Lyriks[0].type.map((item, i) => (
+                {EduProvide[0].type.map((item, i) => (
                   <div
                     className="text-white bg-orange-700 px-2 py-1  mr-1 mb-1 text "
                     key={i}
@@ -379,7 +421,7 @@ function ProjectDetails({}: Props) {
             {/* landing image */}
             <div className="max-w-[100%] md:max-w-[80%] border border-none rounded mx-auto mb-2 md:mb-6">
               <Image
-                src={images.musicplayer}
+                src={images.ftgraph}
                 className="w-full"
                 alt="filmpire"
               />
@@ -392,14 +434,14 @@ function ProjectDetails({}: Props) {
               </h1>
               <div className="flex mx-auto items-center justify-center mb-3 md:mb-0">
                 <Link
-                  href={Lyriks[0].gitUrl}
+                  href={EduProvide[0].gitUrl}
                   className="mr-12 text-sm md:text-base relative -top-1 -left-1 bg-orange-700 py-2.5 px-5 font-medium uppercase text-white transition-all before:absolute before:top-2 before:left-2 before:-z-[1] before:h-full before:w-full before:border-2 before:border-gray-700 before:transition-all before:content-[''] hover:top-0 hover:left-0 before:hover:top-0 before:hover:left-0 duration-300"
                 >
                   Github Code
                 </Link>
                 <Link
                   target={`_blank`}
-                  href={Lyriks[0].liveUrl}
+                  href={EduProvide[0].liveUrl}
                   className="relative text-sm md:text-base -top-1 -left-1 bg-orange-700 py-2.5 px-5 font-medium uppercase text-white transition-all before:absolute before:top-2 before:left-2 before:-z-[1] before:h-full before:w-full before:border-2 before:border-gray-700 before:transition-all before:content-[''] hover:top-0 hover:left-0 before:hover:top-0 before:hover:left-0 duration-300"
                 >
                   Live
@@ -415,7 +457,7 @@ function ProjectDetails({}: Props) {
             </div>
             <div className="leading-relaxed tracking-wide mb-2 md:mb-4">
               {/*  Project Objective */}
-              {Lyriks[0].objective}
+              {EduProvide[0].objective}
             </div>
             <div className="flex justify-center md:justify-start text-2xl sm:text-4xl font-semibold tracking-widemb-1 md:mb-4 pt-8 pb-4">
               <div className="relative  text-xl md:text-2xl  font-semibold md:font-bold tracking-wide text-center md:text-left italic">
@@ -425,7 +467,7 @@ function ProjectDetails({}: Props) {
             </div>
             <div className="leading-relaxed tracking-wide mb-4 md:mb-4">
               {/*  Web Stack - Explanation */}
-              {Lyriks[0].webStack}
+              {EduProvide[0].webStack}
             </div>
             <div className="flex flex-col md:flex-row justify-around my-4  h-[250px] md:h-auto">
               <div className="w-full ">
@@ -434,7 +476,7 @@ function ProjectDetails({}: Props) {
                 </h1>
                 {/*  Stack */}
                 <ul className="flex flex-wrap">
-                  {Lyriks[0].stack.map((item, i) => (
+                  {EduProvide[0].stack.map((item, i) => (
                     <div
                       key={i}
                       className="text-white bg-black px-2 py-1  mr-1 mb-1 text "
@@ -453,12 +495,12 @@ function ProjectDetails({}: Props) {
             </div>
             <div className="leading-relaxed tracking-wide mb-2 md:mb-4">
               {/* Problems and Learnings */}
-              {Lyriks[0].learnings}
+              {EduProvide[0].learnings}
             </div>
             {/* image */}
             <div className="max-w-[100%] md:max-w-[80%] border border-none rounded mx-auto mb-2 md:mb-6">
-              <Image src={images.lk} className="w-full" alt="filmpire" />
-              <p className="text-sm mt-1">{Lyriks[0].imageDesc}</p>
+              <Image src={images.ftstdDetails} className="w-full" alt="filmpire" />
+              <p className="text-sm mt-1">{EduProvide[0].imageDesc}</p>
             </div>
           </div>
         </motion.article>
