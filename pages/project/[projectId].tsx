@@ -553,7 +553,7 @@ function ProjectDetails({}: Props) {
             </div>
             {/* landing image */}
             <div className="max-w-[100%] md:max-w-[80%] border border-none rounded mx-auto mb-2 md:mb-6">
-              <Image src={images.carrental} className="w-full" alt="filmpire" />
+              <Image src={images.landingPage} className="w-full" alt="filmpire" />
               <p className="text-sm mt-1">{projectId} landing page</p>
             </div>
 
@@ -628,7 +628,7 @@ function ProjectDetails({}: Props) {
             </div>
             {/* image */}
             <div className="max-w-[100%] md:max-w-[80%] border border-none rounded mx-auto mb-2 md:mb-6">
-              <Image src={images.mr} className="w-full" alt="filmpire" />
+              <Image src={images.oneOnOne} className="w-full" alt="filmpire" />
               <p className="text-sm mt-1">{famChat[0].imageDesc}</p>
             </div>
           </div>
