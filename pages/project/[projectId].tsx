@@ -171,65 +171,63 @@ function ProjectDetails({}: Props) {
   //     imageDesc: ` Hip Hop genre fetched using search functionality`,
   //   },
   // ]
-  const Morent = [
+  const famChat= [
     {
-      summary: `A Core Member of a 3 member team responsible for creating core
-      functionalities implemented on a custom designed schema using Mongo
-      DB with back-end created upon Node and Express and using React
-      with tStyled Component on front end. Implemented CI/CD pipeline with
-      Typescript type-checking, database migration and code linting`,
+      summary: `A personal project aimed at self improvemnt and learning new next js app router paradigm and mental model by creating core
+      functionalities for a family chat application inspired from discord. Implemented on a custom designed schema using postgres
+      DB using prisma orm with back-end using the serverless functions of next js, the new app router, server actions and react server components.
+      On the front end, tailwind and typescript completed the core tech stack. For upload, 
+      used uploadthing.com which is a wrapper around AWS s3 bucket and for real time chat socket.io and Livekit for video chat. Implemented CI/CD pipeline with
+      Typescript type-checking, database migration and code linting and deployed in railway app`,
       type: [
         "Open Source",
         "Full Stack",
-        "Instructional",
-        "E Commerce",
+        "chat",
+        "Entertainment",
         "Modern Design",
-        "Database",
-        "Rent",
+        "relational Database",
+        "social networking",
       ],
-      landingImage: images.carrental,
-      objective: `  The objective is to code a beautifully designed Car Rental
-      application dubbed 'MORENT' App. This Application has to
-      be delivered in one month time. The team consisting of 3 members
-      were & given free hand to choose the tech stack. The app should
-      have search, filter pagination. The user needs to sign up and log
-      in and must be able to favourite a car using the local storage of
-      the user's browser. The user should be able to upload a car
-      of his choice with an image and description for renting out. User
-      should have his own profile which should list all the cars he has
-      uploaded and his favourite cars. The user must be able to make
-      payment for renting out. There should be an option to search a car
-      based on place/cities and must be able to check out cars between flexible
-      dates.`,
+      landingImage: images.landingPage,
+      objective: `  The objective is to code a beautifully designed family/ closed friends chat
+      application dubbed 'famChat' App. This Application had a time line of 2 weeks time. The app should
+      have search function for searching members, channels , live chat and video chat. Role based actions is a must which are
+       "admin", "moderator" and "guest". It is importamt for the admin/moderators to kick out members and or change their status. Infinte query for loading past chat messages only upon scroll is included. The user needs to sign up and log
+      in and must be able to join a channel through invitation or can simply sig up and create a new server to start. 
+      Relational postgres is used to wore up relationship models between entities. 
+      `,
       webStack:
-        "Designed front-end using React with Context API and useReducer for state management and performed API integration of 10+ endpoint. Engineered back-end using Node.js + Express server and modelled database layer with MongoDB and designing functionalities for the project ‘s search, filter, pagination and making use of local storage of the client’s browser for making an item favorite. Designed and implemented a secure google authentication system for both back-end and front-end using GoogleOauth and Passport.js, allowing users to register an account and gain access to additional features. Co-designed the project UI interface and navigation for both Desktop and Mobile responsiveness using styled-Components. Implemented CI/CD pipeline with Typescript type-checking, code linting and preview deploys.",
+        `"Designed front-end using Next js with zustand for client sidestate management and performed API integration of 10+ endpoints and the data is fetched using 
+        react server components. Engineered back-end using next js serverless functions and modelled database layer
+         with postgres and prisma and designing functionalities for the project ‘s search, infinite loading. Designed and implemented a secure  authentication
+          system for both back-end and front-end using
+          clerk auth, allowing users to register an account and gain access to additional features. Designed the project UI interface and navigation 
+          for both Desktop and Mobile responsiveness using tailwind and shadcn ui. Implemented CI/CD pipeline with Typescript type-checking, code linting and preview deploys."`,
       stack: [
-        "React Js",
+        "NextJs",
         "TypeScript",
-        "Node",
-        "Express",
-        "MongoDB",
-        "Stripe",
+        "Tailwind",
+        "Zustand",
+        "react server components",
+        "Next app router",
+        "Postgres",
+        "Prisma",
+        "Clerk",
+        "socket.io",
         "eslint",
-        "Google OAuth",
-        "Styled Components",
+
       ],
-      gitUrl: "https://github.com/sethumadh/Modern-Music-Player",
-      liveUrl: "https://bughunters-lyriks.vercel.app/",
-      learnings: `We used our first week to get familiarize with TypeScript. We
-      divided our tasks and I took on designing and managing the state
-      management using Context API. I used this tool to enable filter ,
-      search from the back-end and also the function to favourite a car or product using
-      local storage of client's browser. I made use of multiple Contexts APIs to achieve this. I
-      decided to couple Context API with useReducer which made it a
-      powerful tool. I co-designed and coded the schemas, controllers
-      and routers in the back-end with my team mate. Cross functional team management is one of the
-      highlight of this project. Frequent cross functional inputs
-      and coding and bug fixes made me realise the importance of having team members
-      on the same thought process as well as importance of maintaining a
-      sustainable and easy to read code.`,
-      bottomImage: images.mr,
-      imageDesc: ` Car search and filter functionality`,
+      gitUrl: "https://github.com/sethumadh/famChat",
+      liveUrl: "https://famchat-production.up.railway.app/",
+      learnings: `This project was a personal project aimed at skill improvement. The new paradigm shift happening in the next js world using
+      the app router with server actions is used with this project. Composing the client components and server components was a challenge albiet do-able.
+      The sockets still wouldnt work with the app router so I had to make us of the pages./api folder to use socket. Hopefully in future that would change. 
+      SImilarily in this project I have mainly used react server components for server actions and not server mutations. That is because I was getting bugs
+      and unxepected behaviour upon server mutations and revalidations. At the time of writing this , server actions is still experimental therefore I would revisit this
+      section once server actions are stable. Uploadthing and sockets were other new learnings for me and also the use of zustand which is a lightweight alternative to redux toolkit 
+      `,
+      bottomImage: images.oneOnOne,
+      imageDesc: ` Direct chat`,
     },
   ]
   const router = useRouter()
@@ -371,7 +369,7 @@ function ProjectDetails({}: Props) {
         </motion.article>
       )}
 
-      {/*  Lyriks application */}
+      {/*  EduProvide application */}
 
       {projectId == "EduProvide" && (
         <motion.article
@@ -508,7 +506,7 @@ function ProjectDetails({}: Props) {
 
       {/*  Car rent application */}
 
-      {projectId == "Morent" && (
+      {projectId == "famChat" && (
         <motion.article
           initial="hidden"
           whileInView="visible"
@@ -530,7 +528,7 @@ function ProjectDetails({}: Props) {
             <div className="mb-2">1 minute read</div>
             <div className="leading-loose tracking-wide mb-2 md:mb-4">
               {/* summary*/}
-              {Morent[0].summary}
+              {famChat[0].summary}
             </div>
             <div className=" mb-4">
               <div className="flex justify-center md:justify-start text-2xl sm:text-4xl font-semibold tracking-wide mb-1 md:mb-4 pt-8 pb-4">
@@ -541,7 +539,7 @@ function ProjectDetails({}: Props) {
               </div>
               <div className="flex justify-center md:justify-start flex-wrap">
                 {/* Project Type */}
-                {Morent[0].type.map((item, i) => (
+                {famChat[0].type.map((item, i) => (
                   <div
                     className="text-white bg-orange-700 px-2 py-1  mr-1 mb-1 text "
                     key={i}
@@ -567,7 +565,7 @@ function ProjectDetails({}: Props) {
             </div>
             <div className="leading-relaxed tracking-wide mb-2 md:mb-4">
               {/*  Project Objective */}
-              {Morent[0].objective}
+              {famChat[0].objective}
             </div>
             <div className="flex justify-center md:justify-start text-2xl sm:text-4xl font-semibold tracking-widemb-1 md:mb-4 pt-8 pb-4">
               <div className="relative  text-xl md:text-2xl  font-semibold md:font-bold tracking-wide text-center md:text-left italic">
@@ -577,7 +575,7 @@ function ProjectDetails({}: Props) {
             </div>
             <div className="leading-relaxed tracking-wide mb-8 md:mb-4">
               {/*  Web Stack - Explanation */}
-              {Morent[0].webStack}
+              {famChat[0].webStack}
             </div>
             {/* stack
              */}
@@ -587,7 +585,7 @@ function ProjectDetails({}: Props) {
                   Stack
                 </h1>
                 <ul className="flex flex-wrap  ">
-                  {Morent[0].stack.map((item, i) => (
+                  {famChat[0].stack.map((item, i) => (
                     <div
                       key={i}
                       className="text-white bg-black px-2 py-1  mr-1 mb-1 text "
@@ -603,7 +601,7 @@ function ProjectDetails({}: Props) {
                 </h1>
                 <div className="flex mx-auto items-center justify-center mb-3 md:mb-0 w-full md:w-1/2 ">
                   <Link
-                    href={Morent[0].gitUrl}
+                    href={famChat[0].gitUrl}
                     className="mr-12 text-sm md:text-base relative -top-1 -left-1 bg-orange-700 py-2.5 px-5 font-medium uppercase text-white transition-all before:absolute before:top-2 before:left-2 before:-z-[1] before:h-full before:w-full before:border-2 before:border-gray-700 before:transition-all before:content-[''] hover:top-0 hover:left-0 before:hover:top-0 before:hover:left-0 duration-300"
                   >
                     Github Code
@@ -626,12 +624,12 @@ function ProjectDetails({}: Props) {
             </div>
             <div className="leading-relaxed tracking-wide mb-2 md:mb-4">
               {/* Problems and Learnings */}
-              {Morent[0].learnings}
+              {famChat[0].learnings}
             </div>
             {/* image */}
             <div className="max-w-[100%] md:max-w-[80%] border border-none rounded mx-auto mb-2 md:mb-6">
               <Image src={images.mr} className="w-full" alt="filmpire" />
-              <p className="text-sm mt-1">{Morent[0].imageDesc}</p>
+              <p className="text-sm mt-1">{famChat[0].imageDesc}</p>
             </div>
           </div>
         </motion.article>
