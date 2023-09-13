@@ -19,7 +19,7 @@ const navLinks = [
   { nav: "Works", href: "Works" },
   {
     nav: "Resume",
-    href: "https://drive.google.com/file/d/1APrN7MNMLj3OrhNYrL_s7HEGm364kwUc/view?usp=share_link",
+    href: "https://drive.google.com/file/d/1BulrU7X0f-6u3X8UOLtb9nUQmBPdGTrM/view?usp=sharing",
     target: "_blank",
   },
   { nav: "Contact", href: "Contact" },
@@ -96,7 +96,10 @@ function Navbar({ activePage, setActivePage, isTopOfPage }: NavbarProps) {
           />
         )}
         {toggleMenu && (
-          <div  style={{background:"orange"}} className="sidebar text-white  md:hidden flex flex-col fixed top-0 z-20 right-0 bottom-0 min-h-screen  w-[200px] p-2 bg-mainbg1 bg-repeat ">
+          <div
+            style={{ background: "orange" }}
+            className="sidebar text-white  md:hidden flex flex-col fixed top-0 z-20 right-0 bottom-0 min-h-screen  w-[200px] p-2 bg-mainbg1 bg-repeat "
+          >
             <div className="cursor-pointer z-20 text-slate-700 flex justify-end">
               <FaTimes size={30} onClick={() => setToggleMenu(!toggleMenu)} />
             </div>
