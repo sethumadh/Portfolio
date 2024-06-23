@@ -56,8 +56,7 @@ function ProjectDetails({}: Props) {
   ]
   const EduProvide = [
     {
-      summary: `Freelance Contract to create the core functionalities of an admin Dashboard for a startup which focuses on providing soft skills and they need a dashboard for their vendors/instructors,in India 
-      and integrate APIs from an existing DB. The goal is to fetch as much APIs and put it into a well-designed web application.Implemented CI/CD pipeline with code linting and preview deploys.`,
+      summary: `Sikh Volunteers Australia operates a medium-sized school that offers a variety of classes during weekends and weekdays. These sessions are conducted face-to-face and are structured around a comprehensive curriculum, incorporating both classwork and homework to support student learning.`,
       type: [
         "Open Source",
         "Educational",
@@ -68,29 +67,36 @@ function ProjectDetails({}: Props) {
         "Admin",
       ],
       landingImage: images.ftgraph,
-      objective: ` The objective is to code a beautifully designed Modern Dasboard dubbed 'Future Tayare App. This Application has to be
-      delivered in 3 weeks time. The team consisted of 2 members and
-      were given free hand to choose the tech stack. The app should have
-      search functionality to search students , see the studenst progress and what are the different course assigned to students. Used advanced UI kit to create the 
-      acordion effect to display student. Custom jwt authentication is created and designed by me which uses an access token with short expiry and then use a refresh token to
-      get a new acces token. The Database was already in existence for student data and ws provided by the company. Therefore integrated the existing apis to the built ui components and then added custom jwt auth in mongo db as a separate collection/document.`,
+      objective: ` The school has been using an enterprise school management software , an expensive cloud-based subscription model that offers limited functionalities. Additionally, the previous custom system used by the school was found to be unstable, suffering from critical functional defects that frequently disrupted operations. Sikh Volunteers Australia aims to implement an affordable solution—either custom-built or off-the-shelf—that delivers the necessary functionalities efficiently and securely.Some of the objectives are as follows - Seamless and Smooth Administration: Ensures efficient management of student and school administrative tasks without disruptions,
+Automated and Optimised Workflows:Streamlines business processes with automation, leading to enhanced operational efficiency,
+Increased Engagement: Fosters greater interaction between teachers, students, and parents, enhancing the educational experience,
+ Unique Learning Journeys: Offers personalised educational pathways that cater to the individual needs of each student.
+ Increased Enrollments: Attracts more students through an improved educational environment and streamlined administrative processes,
+ Centralized Information Hub: Provides a single access point for all essential information about students, teachers, curriculum, and school operations,
+ Enhanced Security Features:Protects personal data and sensitive information from cyber threats with robust security measure.
+
+      `,
       webStack:
-        "Used React.js for faster build with SPA for rendering to load pages leading to faster page loading times. \n Designed the architecture and lead a team of 2 developers to create core features and integrate third party UI kits like Shadcn, headless UI etc. Implemented Redux Toolkit to maintain a centralized client side state and keep changes mapped to UI through a complex and dynamic frontend allowing for connection to multiple APIs. Customized 10+ endpoints using Redux Toolkit Query and cache data for better user experience. Designed UI using Tailwind CSS with accessibility and responsiveness on all devices.	Worked on different branches, making pull requests to resolve merge conflicts and maintain a smooth git workflow.	Implemented CI/CD pipeline with code linting and preview deploys.",
+        "Used React.js for faster build with SPA for rendering to load pages leading to faster page loading times. \n Designed the architecture and as a sole developer to create core features and integrate third party UI kits like Shadcn, headless UI etc. Implemented Redux Toolkit to maintain a centralized client side state and keep changes mapped to UI through a complex and dynamic frontend allowing for connection to multiple APIs. optimised Redux Query and cache data for better user experience. Designed UI using Tailwind CSS with accessibility and responsiveness on all devices.	Worked on different branches, making pull requests to resolve merge conflicts and maintain a smooth git workflow.	Implemented CI/CD pipeline using git hub actions with self hosted workers with code linting and preview deploys. The Backend is setip using express and the database is based on Postgres db hosted on aws RDS instance.",
       stack: [
-        "reac Js",
+        "React Js",
         "Tailwind",
         "Redux Toolkit",
-        "Redux Toolkit Query",
-        "eslint",
+        "Redux Query",
+        "Express",
+        "Node",
+        "PostgreSql",
+        "Prisma",
+        "Git Actions",
+        "AWS ec2",
+        "nginx",
       ],
       liveUrl: "https://ft-dashboard-app.onrender.com/",
       gitUrl: "https://github.com/sethumadh/FT-Dashboard/",
-      learnings: ` We as a team worked remotely on the project as open source using
-      Github. We wire framed the design using figma
-      and the overall application architecture and file folder. As a team assigned tasks to each member and
-      I was assigned with coding the state management using Redux
-      Toolkit and creating custom end points using redux toolkit query.
-      This was the time I implemented a custom jwt authenticationn system , which I have made so that I can use it as a starter code for my upcoming
+      learnings: ` I worked hybrid environment  on the project as  using
+      Github. The project design was wire framed using figma
+      and the overall application architecture and file folder was inspired by existing best practises. Creating features both backend and frontend gave me new and usefull insights and helped me undertsand time management.
+      Rolled out own custom jwt authentication system , which will be useful in my upcoming
       projects. Also used Shadcn UI which is UI kit based on tailwind which improved my skillset`,
       bottomImage: images.ftstdDetails,
       imageDesc: `Student Details`,
@@ -239,7 +245,7 @@ function ProjectDetails({}: Props) {
 
       {/*  EduProvide application */}
 
-      {projectId == "EduProvide" && (
+      {projectId == "Bright" && (
         <motion.article
           initial="hidden"
           whileInView="visible"
