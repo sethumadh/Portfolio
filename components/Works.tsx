@@ -23,7 +23,7 @@ function Works() {
         "Jest +RTL",
         "Node",
       ],
-      body: "To create the core functionalities of an School Management Software for Schools in Australia .to implement an affordable solution—either custom-built or off-the-shelf—that delivers the necessary functionalities efficiently and securely.",
+      body: "To create School Management Software for Schools in Australia .Implement an affordable solution—either custom-built or off-the-shelf—that delivers the necessary functionalities efficiently and securely.",
       liveUrl: "",
       gitUrl: "",
     },
