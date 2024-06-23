@@ -295,7 +295,7 @@ Increased Engagement: Fosters greater interaction between teachers, students, an
               <Image src={images.ftgraph} className="w-full" alt="filmpire" />
               <p className="text-sm mt-1">{projectId} landing page</p>
             </div>
-            <div className="w-full md:w-1/3 flex flex-col items-center mx-auto">
+            <div className="w-full md:w-1/3  flex-col items-center mx-auto hidden">
               {/* status */}
               <h1 className="text-lg md:text-xl font-semibold md:font-bold tracking-wide text-center italic py-4">
                 Status
