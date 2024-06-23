@@ -52,9 +52,11 @@ import ftstdDetails from "../assets/ftstdDetails.png"
 import contactProject from "../assets/contactProject.jpg"
 import oneOnOne from "../assets/oneOnone.png"
 import landingPage from "../assets/landingPage.png"
+import postgresql from "../assets/postgresql.png"
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
+  postgresql,
   landingPage,
   oneOnOne,
   famChat,

@@ -171,7 +171,7 @@ function ProjectDetails({}: Props) {
   //     imageDesc: ` Hip Hop genre fetched using search functionality`,
   //   },
   // ]
-  const famChat= [
+  const famChat = [
     {
       summary: `A personal project aimed at self improvemnt and learning new next js app router paradigm and mental model by creating core
       functionalities for a family chat application inspired from discord. Implemented on a custom designed schema using postgres
@@ -196,8 +196,7 @@ function ProjectDetails({}: Props) {
       in and must be able to join a channel through invitation or can simply sig up and create a new server to start. 
       Relational postgres is used to wore up relationship models between entities. 
       `,
-      webStack:
-        `"Designed front-end using Next js with zustand for client sidestate management and performed API integration of 10+ endpoints and the data is fetched using 
+      webStack: `"Designed front-end using Next js with zustand for client sidestate management and performed API integration of 10+ endpoints and the data is fetched using
         react server components. Engineered back-end using next js serverless functions and modelled database layer
          with postgres and prisma and designing functionalities for the project ‘s search, infinite loading. Designed and implemented a secure  authentication
           system for both back-end and front-end using
@@ -215,7 +214,6 @@ function ProjectDetails({}: Props) {
         "Clerk",
         "socket.io",
         "eslint",
-
       ],
       gitUrl: "https://github.com/sethumadh/famChat",
       liveUrl: "https://famchat-production.up.railway.app/",
@@ -239,6 +237,140 @@ function ProjectDetails({}: Props) {
     >
       {/* Filmpire application */}
 
+      {/*  EduProvide application */}
+
+      {projectId == "EduProvide" && (
+        <motion.article
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.0 }}
+          transition={{ duration: 0.6 }}
+          variants={{
+            hidden: { opacity: 0.2, x: 0 },
+            visible: { opacity: 1, x: 0 },
+          }}
+          className="w-[85%] md:w-[70%] mx-auto mt-8 md:mt-12 md:px-8 md:py-8"
+        >
+          <div className="flex justify-center md:justify-start text-2xl sm:text-4xl font-semibold tracking-wide mb-4 pt-8 pb-4">
+            <div className="relative  text-2xl md:text-4xl font-semibold md:font-bold tracking-wide text-center md:text-left italic">
+              {projectId}
+              <div className="h-[13.5px] w-[100%] bg-orange-600 absolute right-0 bottom-0 -z-30"></div>
+            </div>
+          </div>
+          <div>
+            <div className="mb-2">1 minute read</div>
+            <div className="leading-loose tracking-wide mb-2 md:mb-4">
+              {/* summary*/}
+              {EduProvide[0].summary}
+            </div>
+            <div className=" mb-4">
+              <div className="flex justify-center md:justify-start text-2xl sm:text-4xl font-semibold tracking-wide mb-1 md:mb-4 pt-8 pb-4">
+                <div className="relative  text-xl md:text-2xl font-semibold md:font-bold tracking-wide text-center md:text-left italic">
+                  Project Type
+                  <div className="h-[8.5px] w-[100%] bg-blue absolute right-0 bottom-0 -z-30"></div>
+                </div>
+              </div>
+              <div className="flex justify-center md:justify-start flex-wrap">
+                {/* Project Type */}
+                {EduProvide[0].type.map((item, i) => (
+                  <div
+                    className="text-white bg-orange-700 px-2 py-1  mr-1 mb-1 text "
+                    key={i}
+                  >
+                    <h2 className="text-center md:text-left italic text-sm md:text-md">
+                      {item}
+                    </h2>{" "}
+                  </div>
+                ))}
+              </div>
+            </div>
+            {/* landing image */}
+            <div className="max-w-[100%] md:max-w-[80%] border border-none rounded mx-auto mb-2 md:mb-6">
+              <Image src={images.ftgraph} className="w-full" alt="filmpire" />
+              <p className="text-sm mt-1">{projectId} landing page</p>
+            </div>
+            <div className="w-full md:w-1/3 flex flex-col items-center mx-auto">
+              {/* status */}
+              <h1 className="text-lg md:text-xl font-semibold md:font-bold tracking-wide text-center italic py-4">
+                Status
+              </h1>
+              <div className="flex mx-auto items-center justify-center mb-3 md:mb-0">
+                <Link
+                  href={EduProvide[0].gitUrl}
+                  className="mr-12 text-sm md:text-base relative -top-1 -left-1 bg-orange-700 py-2.5 px-5 font-medium uppercase text-white transition-all before:absolute before:top-2 before:left-2 before:-z-[1] before:h-full before:w-full before:border-2 before:border-gray-700 before:transition-all before:content-[''] hover:top-0 hover:left-0 before:hover:top-0 before:hover:left-0 duration-300"
+                >
+                  Github
+                </Link>
+                <Link
+                  target={`_blank`}
+                  href={EduProvide[0].liveUrl}
+                  className="relative text-sm md:text-base -top-1 -left-1 bg-orange-700 py-2.5 px-5 font-medium uppercase text-white transition-all before:absolute before:top-2 before:left-2 before:-z-[1] before:h-full before:w-full before:border-2 before:border-gray-700 before:transition-all before:content-[''] hover:top-0 hover:left-0 before:hover:top-0 before:hover:left-0 duration-300"
+                >
+                  Live
+                </Link>
+              </div>
+            </div>
+
+            <div className="flex justify-center md:justify-start text-2xl sm:text-4xl font-semibold tracking-wide mb-1 md:mb-4 pt-8 pb-4">
+              <div className="relative  text-xl md:text-2xl font-semibold md:font-bold tracking-wide text-center md:text-left italic">
+                Project Objective
+                <div className="h-[13.5px] w-[100%] bg-blue absolute right-0 bottom-0 -z-30"></div>
+              </div>
+            </div>
+            <div className="leading-relaxed tracking-wide mb-2 md:mb-4">
+              {/*  Project Objective */}
+              {EduProvide[0].objective}
+            </div>
+            <div className="flex justify-center md:justify-start text-2xl sm:text-4xl font-semibold tracking-widemb-1 md:mb-4 pt-8 pb-4">
+              <div className="relative  text-xl md:text-2xl  font-semibold md:font-bold tracking-wide text-center md:text-left italic">
+                Web Stack - Explanation
+                <div className="h-[13.5px] w-[100%] bg-blue absolute right-0 bottom-0 -z-30"></div>
+              </div>
+            </div>
+            <div className="leading-relaxed tracking-wide mb-4 md:mb-4">
+              {/*  Web Stack - Explanation */}
+              {EduProvide[0].webStack}
+            </div>
+            <div className="flex flex-col md:flex-row justify-around my-4  h-[250px] md:h-auto">
+              <div className="w-full ">
+                <h1 className="text-lg md:text-xl font-semibold md:font-bold tracking-wide text-center md:text-left italic py-4">
+                  Stack
+                </h1>
+                {/*  Stack */}
+                <ul className="flex flex-wrap">
+                  {EduProvide[0].stack.map((item, i) => (
+                    <div
+                      key={i}
+                      className="text-white bg-black px-2 py-1  mr-1 mb-1 text "
+                    >
+                      {item}
+                    </div>
+                  ))}
+                </ul>
+              </div>
+            </div>
+            <div className="flex justify-center md:justify-start text-2xl sm:text-4xl font-semibold tracking-wide mb-1 md:mb-4 pt-8 pb-4">
+              <div className="relative  text-xl md:text-2xl font-semibold md:font-bold tracking-wide text-center md:text-left italic">
+                Problems & Learnings
+                <div className="h-[13.5px] w-[100%] bg-blue absolute right-0 bottom-0 -z-30"></div>
+              </div>
+            </div>
+            <div className="leading-relaxed tracking-wide mb-2 md:mb-4">
+              {/* Problems and Learnings */}
+              {EduProvide[0].learnings}
+            </div>
+            {/* image */}
+            <div className="max-w-[100%] md:max-w-[80%] border border-none rounded mx-auto mb-2 md:mb-6">
+              <Image
+                src={images.ftstdDetails}
+                className="w-full"
+                alt="filmpire"
+              />
+              <p className="text-sm mt-1">{EduProvide[0].imageDesc}</p>
+            </div>
+          </div>
+        </motion.article>
+      )}
       {projectId == "Filmpire" && (
         <motion.article
           initial="hidden"
@@ -368,142 +500,6 @@ function ProjectDetails({}: Props) {
           </div>
         </motion.article>
       )}
-
-      {/*  EduProvide application */}
-
-      {projectId == "EduProvide" && (
-        <motion.article
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: false, amount: 0.0 }}
-          transition={{ duration: 0.6 }}
-          variants={{
-            hidden: { opacity: 0.2, x: 0 },
-            visible: { opacity: 1, x: 0 },
-          }}
-          className="w-[85%] md:w-[70%] mx-auto mt-8 md:mt-12 md:px-8 md:py-8"
-        >
-          <div className="flex justify-center md:justify-start text-2xl sm:text-4xl font-semibold tracking-wide mb-4 pt-8 pb-4">
-            <div className="relative  text-2xl md:text-4xl font-semibold md:font-bold tracking-wide text-center md:text-left italic">
-              {projectId}
-              <div className="h-[13.5px] w-[100%] bg-orange-600 absolute right-0 bottom-0 -z-30"></div>
-            </div>
-          </div>
-          <div>
-            <div className="mb-2">1 minute read</div>
-            <div className="leading-loose tracking-wide mb-2 md:mb-4">
-              {/* summary*/}
-              {EduProvide[0].summary}
-            </div>
-            <div className=" mb-4">
-              <div className="flex justify-center md:justify-start text-2xl sm:text-4xl font-semibold tracking-wide mb-1 md:mb-4 pt-8 pb-4">
-                <div className="relative  text-xl md:text-2xl font-semibold md:font-bold tracking-wide text-center md:text-left italic">
-                  Project Type
-                  <div className="h-[8.5px] w-[100%] bg-blue absolute right-0 bottom-0 -z-30"></div>
-                </div>
-              </div>
-              <div className="flex justify-center md:justify-start flex-wrap">
-                {/* Project Type */}
-                {EduProvide[0].type.map((item, i) => (
-                  <div
-                    className="text-white bg-orange-700 px-2 py-1  mr-1 mb-1 text "
-                    key={i}
-                  >
-                    <h2 className="text-center md:text-left italic text-sm md:text-md">
-                      {item}
-                    </h2>{" "}
-                  </div>
-                ))}
-              </div>
-            </div>
-            {/* landing image */}
-            <div className="max-w-[100%] md:max-w-[80%] border border-none rounded mx-auto mb-2 md:mb-6">
-              <Image
-                src={images.ftgraph}
-                className="w-full"
-                alt="filmpire"
-              />
-              <p className="text-sm mt-1">{projectId} landing page</p>
-            </div>
-            <div className="w-full md:w-1/3 flex flex-col items-center mx-auto">
-              {/* status */}
-              <h1 className="text-lg md:text-xl font-semibold md:font-bold tracking-wide text-center italic py-4">
-                Status
-              </h1>
-              <div className="flex mx-auto items-center justify-center mb-3 md:mb-0">
-                <Link
-                  href={EduProvide[0].gitUrl}
-                  className="mr-12 text-sm md:text-base relative -top-1 -left-1 bg-orange-700 py-2.5 px-5 font-medium uppercase text-white transition-all before:absolute before:top-2 before:left-2 before:-z-[1] before:h-full before:w-full before:border-2 before:border-gray-700 before:transition-all before:content-[''] hover:top-0 hover:left-0 before:hover:top-0 before:hover:left-0 duration-300"
-                >
-                  Github
-                </Link>
-                <Link
-                  target={`_blank`}
-                  href={EduProvide[0].liveUrl}
-                  className="relative text-sm md:text-base -top-1 -left-1 bg-orange-700 py-2.5 px-5 font-medium uppercase text-white transition-all before:absolute before:top-2 before:left-2 before:-z-[1] before:h-full before:w-full before:border-2 before:border-gray-700 before:transition-all before:content-[''] hover:top-0 hover:left-0 before:hover:top-0 before:hover:left-0 duration-300"
-                >
-                  Live
-                </Link>
-              </div>
-            </div>
-
-            <div className="flex justify-center md:justify-start text-2xl sm:text-4xl font-semibold tracking-wide mb-1 md:mb-4 pt-8 pb-4">
-              <div className="relative  text-xl md:text-2xl font-semibold md:font-bold tracking-wide text-center md:text-left italic">
-                Project Objective
-                <div className="h-[13.5px] w-[100%] bg-blue absolute right-0 bottom-0 -z-30"></div>
-              </div>
-            </div>
-            <div className="leading-relaxed tracking-wide mb-2 md:mb-4">
-              {/*  Project Objective */}
-              {EduProvide[0].objective}
-            </div>
-            <div className="flex justify-center md:justify-start text-2xl sm:text-4xl font-semibold tracking-widemb-1 md:mb-4 pt-8 pb-4">
-              <div className="relative  text-xl md:text-2xl  font-semibold md:font-bold tracking-wide text-center md:text-left italic">
-                Web Stack - Explanation
-                <div className="h-[13.5px] w-[100%] bg-blue absolute right-0 bottom-0 -z-30"></div>
-              </div>
-            </div>
-            <div className="leading-relaxed tracking-wide mb-4 md:mb-4">
-              {/*  Web Stack - Explanation */}
-              {EduProvide[0].webStack}
-            </div>
-            <div className="flex flex-col md:flex-row justify-around my-4  h-[250px] md:h-auto">
-              <div className="w-full ">
-                <h1 className="text-lg md:text-xl font-semibold md:font-bold tracking-wide text-center md:text-left italic py-4">
-                  Stack
-                </h1>
-                {/*  Stack */}
-                <ul className="flex flex-wrap">
-                  {EduProvide[0].stack.map((item, i) => (
-                    <div
-                      key={i}
-                      className="text-white bg-black px-2 py-1  mr-1 mb-1 text "
-                    >
-                      {item}
-                    </div>
-                  ))}
-                </ul>
-              </div>
-            </div>
-            <div className="flex justify-center md:justify-start text-2xl sm:text-4xl font-semibold tracking-wide mb-1 md:mb-4 pt-8 pb-4">
-              <div className="relative  text-xl md:text-2xl font-semibold md:font-bold tracking-wide text-center md:text-left italic">
-                Problems & Learnings
-                <div className="h-[13.5px] w-[100%] bg-blue absolute right-0 bottom-0 -z-30"></div>
-              </div>
-            </div>
-            <div className="leading-relaxed tracking-wide mb-2 md:mb-4">
-              {/* Problems and Learnings */}
-              {EduProvide[0].learnings}
-            </div>
-            {/* image */}
-            <div className="max-w-[100%] md:max-w-[80%] border border-none rounded mx-auto mb-2 md:mb-6">
-              <Image src={images.ftstdDetails} className="w-full" alt="filmpire" />
-              <p className="text-sm mt-1">{EduProvide[0].imageDesc}</p>
-            </div>
-          </div>
-        </motion.article>
-      )}
-
       {/*  Car rent application */}
 
       {projectId == "famChat" && (
@@ -553,7 +549,11 @@ function ProjectDetails({}: Props) {
             </div>
             {/* landing image */}
             <div className="max-w-[100%] md:max-w-[80%] border border-none rounded mx-auto mb-2 md:mb-6">
-              <Image src={images.landingPage} className="w-full" alt="filmpire" />
+              <Image
+                src={images.landingPage}
+                className="w-full"
+                alt="filmpire"
+              />
               <p className="text-sm mt-1">{projectId} landing page</p>
             </div>
 

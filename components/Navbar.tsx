@@ -17,11 +17,11 @@ const navLinks = [
   { nav: "Home", href: "Home" },
   { nav: "About", href: "About" },
   { nav: "Works", href: "Works" },
-  {
-    nav: "Resume",
-    href: "https://drive.google.com/file/d/1tNqDeQeD45kZor374PvtV2qlnD1ZeTer/view?usp=sharing",
-    target: "_blank",
-  },
+  // {
+  //   nav: "Resume",
+  //   href: "https://drive.google.com/file/d/1tNqDeQeD45kZor374PvtV2qlnD1ZeTer/view?usp=sharing",
+  //   target: "_blank",
+  // },
   { nav: "Contact", href: "Contact" },
 ]
 
@@ -72,7 +72,7 @@ function Navbar({ activePage, setActivePage, isTopOfPage }: NavbarProps) {
                 href={`${
                   link.nav != "Resume" ? `/#${link.href}` : `${link.href}`
                 }`}
-                target={link.target}
+                // target={link.target}
                 // smooth={true}
                 // offset={-100}
                 // duration={500}
@@ -114,7 +114,7 @@ function Navbar({ activePage, setActivePage, isTopOfPage }: NavbarProps) {
                     href={`${
                       link.nav != "Resume" ? `/#${link.href}` : `${link.href}`
                     }`}
-                    target={link.target}
+                    // target={link.target}
                     onClick={() => {
                       setToggleMenu(!toggleMenu)
                     }}

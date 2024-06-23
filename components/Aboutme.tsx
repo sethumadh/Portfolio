@@ -58,8 +58,8 @@ function Aboutme() {
     },
     {
       id: 7,
-      src: images.graphql,
-      title: "GraphQL",
+      src: images.postgresql,
+      title: "postgreSql",
       style: "shadow-pink-400",
     },
     {

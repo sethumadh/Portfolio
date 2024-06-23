@@ -8,6 +8,26 @@ import { images } from "../constants"
 function Works() {
   const projectLinks = [
     {
+      src: images.FTlt,
+      title: "Bright",
+      subtitle: "- School Management Software (Clients - 2)",
+      role: "Full Stack / Product Owner & Creator",
+      tech: [
+        "React Js",
+        "Tailwind",
+        "Redux Toolkit",
+        "Typescript+zod",
+        "Express",
+        "postgreSql",
+        "jwt custom auth",
+        "Jest +RTL",
+        "Node",
+      ],
+      body: "To create the core functionalities of an School Management Software for Schools in Australia .to implement an affordable solution—either custom-built or off-the-shelf—that delivers the necessary functionalities efficiently and securely.",
+      liveUrl: "",
+      gitUrl: "",
+    },
+    {
       src: images.famChat,
       title: "famChat",
       subtitle: "- Social media for family and friends",
@@ -25,28 +45,7 @@ function Works() {
       body: `The objective is to code a beautifully designed family/ closed friends chat
       application dubbed 'famChat' App. This Application had a time line of 2 weeks time. Implemented CI/CD pipeline with Typescript type-checking, database migration and code linting`,
       liveUrl: "https://famchat-production.up.railway.app/",
-      gitUrl:
-        "https://github.com/sethumadh/famChat",
-    },
-    {
-      src: images.FTlt,
-      title: "EduProvide",
-      subtitle: "- Admin Dashboard",
-      role: "Full Stack/Team Lead",
-      tech: [
-        " React Js",
-        "Tailwind",
-        "Redux Toolkit",
-        "Typescript+zod",
-        "Express",
-        "Mongo",
-        "jwt custom auth",
-        "Jest +RTL",
-        "Unit Testing",
-      ],
-      body: "Freelance Contract to create the core functionalities of an admin Dashboard for a startup in India App and integrate APIs from an existing DB. The goal is to fetch as much APIs and put it into a well-designed web application.Implemented CI/CD pipeline with code linting and preview deploys.",
-      liveUrl: "https://ft-dashboard-app.onrender.com/",
-      gitUrl: "https://github.com/sethumadh/FT-Dashboard/",
+      gitUrl: "https://github.com/sethumadh/famChat",
     },
     {
       src: images.filmpirelt,
@@ -58,7 +57,7 @@ function Works() {
       liveUrl: "https://willowy-nougat-2d34e6.netlify.app/",
       gitUrl: " ",
     },
-    
+
     // {
     //   src: images.passwordapp,
     //   title: "Password Creator App",
@@ -92,7 +91,7 @@ function Works() {
         <div className=" flex flex-col">
           {projectLinks.map((link) => (
             <div
-              className=" w-full flex flex-col md:flex-row mb-8 "
+              className="shadow-lg px-8 py-4 border rounded-lg w-full flex flex-col md:flex-row mb-8 "
               key={link.title}
             >
               <div className="flex flex-col w-full md:w-[55%] mb-8 ">
@@ -125,14 +124,22 @@ function Works() {
                   </Link>
                   <Link
                     href={link.gitUrl}
-                    className="mr-8 text-sm md:text-base relative -top-1 -left-1 bg-orange-700 py-2.5 px-3 md:px-5 font-medium uppercase text-white transition-all before:absolute before:top-2 before:left-2 before:-z-[1] before:h-full before:w-full before:border-2 before:border-gray-700 before:transition-all before:content-[''] hover:top-0 hover:left-0 before:hover:top-0 before:hover:left-0 duration-300"
+                    className={`${
+                      link.title == "Bright"
+                        ? "hidden"
+                        : "mr-8 text-sm md:text-base relative -top-1 -left-1 bg-orange-700 py-2.5 px-3 md:px-5 font-medium uppercase text-white transition-all before:absolute before:top-2 before:left-2 before:-z-[1] before:h-full before:w-full before:border-2 before:border-gray-700 before:transition-all before:content-[''] hover:top-0 hover:left-0 before:hover:top-0 before:hover:left-0 duration-300"
+                    } `}
                   >
                     Github
                   </Link>
                   <Link
                     target={`_blank`}
                     href={link.liveUrl}
-                    className="relative text-sm md:text-base -top-1 -left-1 bg-orange-700 py-2.5 px-3 md:px-5 font-medium uppercase text-white transition-all before:absolute before:top-2 before:left-2 before:-z-[1] before:h-full before:w-full before:border-2 before:border-gray-700 before:transition-all before:content-[''] hover:top-0 hover:left-0 before:hover:top-0 before:hover:left-0 duration-300"
+                    className={`${
+                      link.title == "Bright"
+                        ? "hidden"
+                        : "mr-8 text-sm md:text-base relative -top-1 -left-1 bg-orange-700 py-2.5 px-3 md:px-5 font-medium uppercase text-white transition-all before:absolute before:top-2 before:left-2 before:-z-[1] before:h-full before:w-full before:border-2 before:border-gray-700 before:transition-all before:content-[''] hover:top-0 hover:left-0 before:hover:top-0 before:hover:left-0 duration-300"
+                    } `}
                   >
                     Demo
                   </Link>
