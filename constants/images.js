@@ -55,6 +55,8 @@ import landingPage from "../assets/landingPage.png"
 import postgresql from "../assets/postgresql.png"
 import vpa_marketing from "../assets/vpa_marketing.png"
 import vpa_app from "../assets/vpa_app.png"
+import teacher_dash from "../assets/teacher_dash.png"
+import home from "../assets/home.png"
 
 
 

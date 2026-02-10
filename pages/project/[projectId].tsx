@@ -170,15 +170,11 @@ Increased Engagement: Fosters greater interaction between teachers, students, an
     },
   ]
   const router = useRouter()
-  console.log(router)
   const projectId = router.query.projectId
   return (
     <section
       className={`works  bg-white pt-10 md:pt-2 font-muli text-xl font-light`}
     >
-      {/* Filmpire application */}
-
-      {/*  EduProvide application */}
 
       {projectId == "Bright" && (
         <motion.article
@@ -312,7 +308,7 @@ Increased Engagement: Fosters greater interaction between teachers, students, an
           </div>
         </motion.article>
       )}
-      {projectId == "Filmpire" && (
+      {projectId == "vpa_connect" && (
         <motion.article
           initial="hidden"
           whileInView="visible"
@@ -359,7 +355,7 @@ Increased Engagement: Fosters greater interaction between teachers, students, an
             </div>
             {/* landing image */}
             <div className="max-w-[100%] md:max-w-[80%] border border-none rounded mx-auto mb-2 md:mb-6">
-              <Image src={images.filmpire} className="w-full" alt="filmpire" />
+              <Image src={images.vpa_app} className="w-full" alt="vpa_connect" />
               <p className="text-sm mt-1">{projectId} landing page</p>
             </div>
 
@@ -435,7 +431,7 @@ Increased Engagement: Fosters greater interaction between teachers, students, an
             </div>
             {/* image */}
             <div className="max-w-[100%] md:max-w-[80%] border border-none rounded mx-auto mb-2 md:mb-6">
-              <Image src={images.fp} className="w-full" alt="filmpire" />
+              <Image src={images.vpa_app} className="w-full" alt="vpa_connect" />
               <p className="text-sm mt-1">{vpa_connect[0].imageDesc}</p>
             </div>
           </div>

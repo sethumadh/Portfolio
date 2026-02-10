@@ -7,6 +7,26 @@ import { images } from "../constants"
 
 function Works() {
   const projectLinks = [
+        {
+      src: images.vpa_marketing,
+      title: "vpa_connect",
+      subtitle: "- Vendor paid advertising platform for real estate",
+      role: "Full Stack Developer",
+      tech: [
+        "Next.js 15 - App Router",
+        "TypeScript",
+        "Tailwind",
+        "Clerk Auth",
+        "Zustand",
+        "MongoDB",
+        "Typegoose",
+        "Stripe",
+        "Zod",
+      ],
+      body: `The objective is to build a B2B SaaS platform that streamlines vendor-paid advertising for the Australian residential real estate industry. The platform connects real estate agents, agencies, and suppliers — enabling property marketing campaigns to launch immediately through flexible payment models including upfront payments via Stripe, deferred financing through Campaign Flow and Afterpay, and BECS direct debit. Features multi-tenant role-based access control, subscription billing with tiered pricing, multi-party invoice reconciliation, and Australian financial compliance including AML/KYC verification and ABN/GST validation.`,
+      liveUrl: "https://vpaconnect.com.au/",
+      gitUrl: "#",
+    },
     {
       src: images.FTlt,
       title: "Bright",
@@ -27,6 +47,8 @@ function Works() {
       liveUrl: "",
       gitUrl: "",
     },
+
+
     {
       src: images.famChat,
       title: "famChat",
@@ -47,26 +69,6 @@ function Works() {
       liveUrl: "https://famchat-production.up.railway.app/",
       gitUrl: "https://github.com/sethumadh/famChat",
     },
-    {
-      src: images.filmpirelt,
-      title: "Filmpire",
-      subtitle: "- World of Movies",
-      role: "Front End React Js Developer",
-      tech: ["React Js", "MUI", "Redux Toolkit", "Redux Toolkit Query"],
-      body: "A Solo project to create core features and integrate third party APIs. Implemented CI/CD pipeline with code linting and preview deploys",
-      liveUrl: "https://willowy-nougat-2d34e6.netlify.app/",
-      gitUrl: " ",
-    },
-
-    // {
-    //   src: images.passwordapp,
-    //   title: "Password Creator App",
-    //   subtitle: "An App using",
-    //   tech: " React Js, MUI ",
-    //   body: "- An app for generating secure passwords using cryptographically secure pseudo-random number generators.",
-    //   liveUrl: "https://password-creator-ten.vercel.app/",
-    //   gitUrl: "https://github.com/sethumadh/Password-Creator",
-    // },
   ]
   return (
     <section className={`works bg-white `}>
