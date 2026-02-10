@@ -53,6 +53,10 @@ import contactProject from "../assets/contactProject.jpg"
 import oneOnOne from "../assets/oneOnone.png"
 import landingPage from "../assets/landingPage.png"
 import postgresql from "../assets/postgresql.png"
+import vpa_marketing from "../assets/vpa_marketing.png"
+import vpa_app from "../assets/vpa_app.png"
+
+
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
@@ -111,4 +115,6 @@ export default {
   morentlt,
   meteorrain,
   FTlt,
+  vpa_marketing,
+  vpa_app
 }

@@ -9,51 +9,60 @@ import Image from "next/image"
 type Props = {}
 
 function ProjectDetails({}: Props) {
-  const Filmpire = [
+  const vpa_connect = [
     {
-      summary:
-        "A Solo project to create core features and integrate third party APIs. Implemented CI/CD pipeline with code linting and preview deploys",
+      summary: `VPA Connect is an enterprise B2B SaaS platform that streamlines vendor-paid advertising for the Australian residential real estate industry. It acts as a digital intermediary connecting real estate agents, agencies, and suppliers — enabling property marketing campaigns to launch immediately through flexible payment models including upfront (Stripe), deferred financing (Campaign Flow, Afterpay), and BECS direct debit, while handling multi-party invoice reconciliation and settlement.`,
       type: [
-        "Educational",
-        "Instructional",
-        "Entertainment",
-        "AI",
+        "B2B SaaS",
+        "Fintech",
+        "Real Estate",
+        "Dashboard",
+        "Multi-Tenant",
+        "Payments",
         "Modern Design",
         "Database",
-        "Movies",
+        "Admin",
       ],
-      landingImage: images.filmpire,
-      objective: `This was a solo project I had worked on prior to my bootcamp with
-        JSM masterclass. The project is to create an IMDB clone
-        where the user can seamlessly fetch as many different movies based
-        on genre, countries, reviews etc. The state management is designed
-        and managed using redux toolkit and the enpoints were made
-        using redux toolkit query. The entire designing of the website done using MUI. The project was to be done within a span of 2
-        weeks. It was also required to make use of Alan AI, an AI tool
-        for movie fetching.`,
+      landingImage: images.vpa_marketing, // update with your actual image reference
+      objective: `In Australian real estate, marketing a property requires upfront capital from sellers for services like photography, signage, and advertising — often before the property is even sold. Agencies and agents were relying on fragmented manual processes, spreadsheets, and phone calls to coordinate suppliers, track invoices, and manage payments across multiple parties. There was no unified platform to handle the complex payment flows, especially deferred financing where sellers need campaigns to launch immediately but pay later. VPA Connect aims to solve this with the following objectives:
+    Unified Campaign Management: A single platform for agents to create property marketing campaigns, add suppliers, build budgets, and track every invoice item from creation to settlement.
+    Flexible Payment Orchestration: Support for upfront payments (Stripe checkout), deferred financing (Campaign Flow with KYC/AML verification), and BECS direct debit — including split payments across methods on a single campaign.
+    Multi-Stakeholder Coordination: Seamlessly connect agencies, their agents, and service suppliers with role-based access, approval workflows, and automated invoice lifecycle management.
+    Subscription-Based Revenue Model: Tiered agency subscriptions (Bronze to Platinum) with usage-based billing, campaign quotas, and overage charges.
+    Compliance & Security: Integrated identity verification (ConnectID), ABN/GST validation via the Australian Business Register, DocuSign for director agreements, and robust financial compliance for BECS mandates and deferred payment applications.
+    Automated Supplier Settlement: Stripe Connect integration for direct supplier payouts, platform fee calculation, and end-to-end payment tracking from seller to supplier. Please note this repo is private.`,
       webStack:
-        "Built a dynamic single-page UI using React.js that makes use of the virtual DOM and modular, reusable components to keep code maintainable and simple to comprehend for future iterations. Redux Toolkit is used to implement a complex and dynamic frontend that connect to several APIs while maintaining a centralized state and keeping changes mapped to user interface. Used Redux's scalability to increase the application's horizontal growth while avoiding ineffective prop-drilling. Redux toolkit Query is used to retrieve data from TMDB API to cache it for better user experience.	Styled application with MUI for modern design, responsiveness and accessibility on all devices.	Implemented CI/CD pipeline with code linting and preview deploys.",
-
+        "Built with Next.js 15 App Router and React 18 in strict TypeScript for a type-safe, server-first architecture with server actions replacing traditional API routes.\nMongoDB with Typegoose provides flexible document modeling for complex relational data across campaigns, invoices, agencies, and payment transactions.\nClerk handles multi-tenant authentication with role-based access control for agents, suppliers, and admins, integrated into Next.js middleware for route protection.\nStripe powers the complete payment infrastructure — checkout sessions for upfront payments, BECS direct debit mandates, Connect accounts for supplier settlement, and subscription billing with tiered pricing.\nCampaign Flow and Afterpay integrations provide deferred payment financing with webhook-driven async status updates processed via Upstash QStash task queuing.\nZustand manages client-side state while React Hook Form with Zod validation handles complex multi-step forms.\nTailwindCSS with shadcn/ui components delivers a consistent, accessible UI with TanStack Table powering data-heavy views.\nUpstash Redis provides API rate limiting, and the CI/CD pipeline includes ESLint, Prettier, TypeScript strict checking, and Jest testing with pre-commit hooks.",
       stack: [
-        "React Js",
-        "MUI",
-        "Redux Toolkit",
-        "Redux Toolkit Query",
-        "eslint",
+        "Next.js 15",
+        "React 18",
+        "TypeScript",
+        "MongoDB",
+        "Typegoose",
+        "Clerk",
+        "Stripe",
+        "Zustand",
+        "React Hook Form",
+        "Zod",
+        "TailwindCSS",
+        "shadcn/ui",
+        "TanStack Table",
+        "Upstash Redis",
+        "Upstash QStash",
+        "SendGrid",
+        "DocuSign",
+        "pnpm",
+        "Jest",
+        "Vercel",
       ],
-      gitUrl: "https://github.com/sethumadh/Filmpire_sethumadh",
-      liveUrl: "https://willowy-nougat-2d34e6.netlify.app/",
-      learnings: ` Understanding overall architecture - the core features and design
-        aspects and the file structure- of the project was a big learning
-        point and a milestone. It made me realised that it is very
-        important to understood the project in a macro level. Also it was
-        my first foray in terms of utilizing the prowess of Redux toolkit
-        in a project and even though it has a big learning curve , it
-        became of my favaourite and go-to tools.`,
-      bottomImage: images.fp,
-      imageDesc: `Godfather movie fetched using search functionality`,
+      liveUrl: "https://vpaconnect.com.au/",
+      gitUrl: "#", // private repo — update or remove as needed
+      learnings: `This project deepened my understanding of complex payment orchestration in a regulated fintech environment — handling multiple payment methods (Stripe checkout, BECS direct debit, deferred financing) on a single transaction required careful state machine design and webhook-driven reconciliation. Building a multi-tenant platform with three distinct user roles (agents, suppliers, agencies) taught me how to architect role-based middleware, conditional routing, and organization-scoped data access at scale. Working with Australian financial compliance (AML/KYC via ConnectID, ABN/GST verification, BECS mandates) was particularly valuable — understanding how regulatory requirements shape API design and user flows. The subscription billing system with tiered pricing, campaign quotas, and usage-based overages gave me hands-on experience with Stripe's billing APIs beyond simple checkout. Implementing server actions in Next.js 15 App Router as a replacement for traditional API routes was a significant architectural shift that improved type safety and reduced boilerplate across the entire backend.`,
+      bottomImage: images.vpa_app, // update with your actual image reference
+      imageDesc: `Campaign Dashboard`,
     },
   ]
+
   const EduProvide = [
     {
       summary: `Sikh Volunteers Australia operates a medium-sized school that offers a variety of classes during weekends and weekdays. These sessions are conducted face-to-face and are structured around a comprehensive curriculum, incorporating both classwork and homework to support student learning.`,
@@ -102,81 +111,7 @@ Increased Engagement: Fosters greater interaction between teachers, students, an
       imageDesc: `Student Details`,
     },
   ]
-  // const Admin = [
-  //   {
-  //     summary: `Assembled and lead a team of 3 to create the core functionalities
-  //       of the Music Player App and integrate third part APIs called Bug
-  //       Hunter Lyriks app. The goal is to fetch as much APIs and put it
-  //       into a well-designed web application.Implemented CI/CD pipeline
-  //       with code linting and preview deploys.`,
-  //     type: [
-  //       "Open Source",
-  //       "Educational",
-  //       "Instructional",
-  //       "Entertainment",
-  //       "Modern Design",
-  //       "Database",
-  //       "Music",
-  //     ],
-  //     landingImage: images.musicplayer,
-  //     objective: ` The objective is to code a beautifully designed Modern Music
-  //     player dubbed 'Lyriks' App. This Application has to be
-  //     delivered in one month time. The team consisted of 4 members and
-  //     were given free hand to choose the tech stack. The app should have
-  //     search functionality , a music player which can be a react-library
-  //     npm package or custom made and should render songs related to the
-  //     current on playing. The app should have displayed different genre
-  //     listed in the front page`,
-  //     webStack:
-  //       "Used Next.js for better SEO and server-side rendering to load pages leading to faster page loading times. \n Designed the architecture and lead a team of 4 developers to create core features and integrate third party APIs -Shazam Core API to dynamically render the obtained JSON. Implemented Redux Toolkit to maintain a centralized state and keep changes mapped to UI through a complex and dynamic frontend allowing for connection to multiple APIs. Customized 10+ endpoints using Redux Toolkit Query and cache data for better user experience. Designed UI using Tailwind CSS with accessibility and responsiveness on all devices.	Worked on different branches, making pull requests to resolve merge conflicts and maintain a smooth git workflow.	Implemented CI/CD pipeline with code linting and preview deploys.",
-  //     stack: [
-  //       "Next Js",
-  //       "Tailwind",
-  //       "Redux Toolkit",
-  //       "Redux Toolkit Query",
-  //       "eslint",
-  //     ],
-  //     gitUrl: "https://github.com/sethumadh/Modern-Music-Player",
-  //     liveUrl: "https://bughunters-lyriks.vercel.app/",
-  //     learnings: ` We as a team worked remotely on the project as open source using
-  //     Github. We wire framed the design using figma
-  //     and the overall application architecture and file folder. I had my
-  //    ${(
-  //      <Link
-  //        href={"/project/Filmpire"}
-  //        className="text-base font-medium text-orange-500 px-2"
-  //      >
-  //        Filmpire Project
-  //      </Link>
-  //    )}
-  //     as experience. As a team assigned tasks to each member and
-  //     I was assigned with coding the state management using Redux
-  //     Toolkit and creating custom end points using redux toolkit query.
-  //     We decided to work on our tasks and come back to discuss the
-  //     progress in 10 days. But unfortunately as 2 weeks went by from the
-  //     start, for personal and other reasons 3 of our members had to
-  //     leave project. Which meant I was the only member left in the team.
-  //     And it was only 12 days left for showcasing the project.
-  //     Neveretheless I decided to showcase the project and went back to
-  //     the drawing board and regrouped myself and took some tough decisions in
-  //     axing some of the functionalities we had planned on doing. This
-  //     was to ensure to create a minimum viabale project - MVP and to
-  //     showcase to our mentors within deadline. I had a temporary design made which I
-  //      was using to code and test the state management and
-  //     custom endpoints using redux toolkit query. I made some face-lifts
-  //     on this design and worked on other functionalities which were initially
-  //     assigned to other members like creating the music player, genres listing search function and
-  //      overall design and coded for the next 8 days through
-  //     and through. I was able to showcase the music app albeit with some
-  //     design flaws but a great working music app with search functions,
-  //     genres and related songs displayed and also a custom made music
-  //     player. I took this challenge as an opportunity where I could
-  //     learn and code those core concepts which were otherwise assigned
-  //     to other memebers.`,
-  //     bottomImage: images.lk,
-  //     imageDesc: ` Hip Hop genre fetched using search functionality`,
-  //   },
-  // ]
+
   const famChat = [
     {
       summary: `A personal project aimed at self improvemnt and learning new next js app router paradigm and mental model by creating core
@@ -399,7 +334,7 @@ Increased Engagement: Fosters greater interaction between teachers, students, an
             <div className="mb-2">1 minute read</div>
             <div className="leading-loose tracking-wide mb-2 md:mb-4">
               {/* summary*/}
-              {Filmpire[0].summary}
+              {vpa_connect[0].summary}
             </div>
             <div className=" mb-4">
               <div className="flex justify-center md:justify-start text-2xl sm:text-4xl font-semibold tracking-wide mb-1 md:mb-4 pt-8 pb-4">
@@ -410,7 +345,7 @@ Increased Engagement: Fosters greater interaction between teachers, students, an
               </div>
               <div className="flex justify-center md:justify-start flex-wrap">
                 {/* Project Type */}
-                {Filmpire[0].type.map((item, i) => (
+                {vpa_connect[0].type.map((item, i) => (
                   <div
                     className="text-white bg-orange-700 px-2 py-1  mr-1 mb-1 text "
                     key={i}
@@ -436,7 +371,7 @@ Increased Engagement: Fosters greater interaction between teachers, students, an
             </div>
             <div className="leading-relaxed tracking-wide mb-2 md:mb-4">
               {/*  Project Objective */}
-              {Filmpire[0].objective}
+              {vpa_connect[0].objective}
             </div>
             <div className="flex justify-center md:justify-start text-2xl sm:text-4xl font-semibold tracking-widemb-1 md:mb-4 pt-8 pb-4">
               <div className="relative  text-xl md:text-2xl  font-semibold md:font-bold tracking-wide text-center md:text-left italic">
@@ -446,7 +381,7 @@ Increased Engagement: Fosters greater interaction between teachers, students, an
             </div>
             <div className="leading-relaxed tracking-wide mb-4 md:mb-4">
               {/*  Web Stack - Explanation */}
-              {Filmpire[0].webStack}
+              {vpa_connect[0].webStack}
             </div>
             <div className="flex flex-col md:flex-row justify-around  h-[250px] md:h-auto">
               <div className="w-full md:w-1/3">
@@ -455,7 +390,7 @@ Increased Engagement: Fosters greater interaction between teachers, students, an
                 </h1>
                 {/*  Stack */}
                 <ul className="flex flex-wrap">
-                  {Filmpire[0].stack.map((item, i) => (
+                  {vpa_connect[0].stack.map((item, i) => (
                     <div
                       key={i}
                       className="text-white bg-black px-2 py-1  mr-1 mb-1 text "
@@ -473,14 +408,14 @@ Increased Engagement: Fosters greater interaction between teachers, students, an
                 </h1>
                 <div className="flex mx-auto items-center justify-center mb-3 md:mb-0">
                   <Link
-                    href={Filmpire[0].gitUrl}
+                    href={vpa_connect[0].gitUrl}
                     className="mr-12 text-sm md:text-base relative -top-1 -left-1 bg-orange-700 py-2.5 px-5 font-medium uppercase text-white transition-all before:absolute before:top-2 before:left-2 before:-z-[1] before:h-full before:w-full before:border-2 before:border-gray-700 before:transition-all before:content-[''] hover:top-0 hover:left-0 before:hover:top-0 before:hover:left-0 duration-300"
                   >
                     Github Code
                   </Link>
                   <Link
                     target={`_blank`}
-                    href={Filmpire[0].liveUrl}
+                    href={vpa_connect[0].liveUrl}
                     className="relative text-sm md:text-base -top-1 -left-1 bg-orange-700 py-2.5 px-5 font-medium uppercase text-white transition-all before:absolute before:top-2 before:left-2 before:-z-[1] before:h-full before:w-full before:border-2 before:border-gray-700 before:transition-all before:content-[''] hover:top-0 hover:left-0 before:hover:top-0 before:hover:left-0 duration-300"
                   >
                     Live
@@ -496,12 +431,12 @@ Increased Engagement: Fosters greater interaction between teachers, students, an
             </div>
             <div className="leading-relaxed tracking-wide mb-2 md:mb-4">
               {/* Problems and Learnings */}
-              {Filmpire[0].learnings}
+              {vpa_connect[0].learnings}
             </div>
             {/* image */}
             <div className="max-w-[100%] md:max-w-[80%] border border-none rounded mx-auto mb-2 md:mb-6">
               <Image src={images.fp} className="w-full" alt="filmpire" />
-              <p className="text-sm mt-1">{Filmpire[0].imageDesc}</p>
+              <p className="text-sm mt-1">{vpa_connect[0].imageDesc}</p>
             </div>
           </div>
         </motion.article>
