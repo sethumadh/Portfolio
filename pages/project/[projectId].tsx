@@ -75,7 +75,7 @@ function ProjectDetails({}: Props) {
         "Database",
         "Admin",
       ],
-      landingImage: images.ftgraph,
+      landingImage: images.home,
       objective: ` The school has been using an enterprise school management software , an expensive cloud-based subscription model that offers limited functionalities. Additionally, the previous custom system used by the school was found to be unstable, suffering from critical functional defects that frequently disrupted operations. Sikh Volunteers Australia aims to implement an affordable solution—either custom-built or off-the-shelf—that delivers the necessary functionalities efficiently and securely.Some of the objectives are as follows - Seamless and Smooth Administration: Ensures efficient management of student and school administrative tasks without disruptions,
 Automated and Optimised Workflows:Streamlines business processes with automation, leading to enhanced operational efficiency,
 Increased Engagement: Fosters greater interaction between teachers, students, and parents, enhancing the educational experience,
@@ -107,7 +107,7 @@ Increased Engagement: Fosters greater interaction between teachers, students, an
       and the overall application architecture and file folder was inspired by existing best practises. Creating features both backend and frontend gave me new and usefull insights and helped me undertsand time management.
       Rolled out own custom jwt authentication system , which will be useful in my upcoming
       projects. Also used Shadcn UI which is UI kit based on tailwind which improved my skillset`,
-      bottomImage: images.ftstdDetails,
+      bottomImage: images.teacher_dash,
       imageDesc: `Student Details`,
     },
   ]

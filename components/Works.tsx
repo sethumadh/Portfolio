@@ -7,7 +7,7 @@ import { images } from "../constants"
 
 function Works() {
   const projectLinks = [
-        {
+    {
       src: images.vpa_marketing,
       title: "vpa_connect",
       subtitle: "- Vendor paid advertising platform for real estate",
@@ -28,7 +28,7 @@ function Works() {
       gitUrl: "#",
     },
     {
-      src: images.FTlt,
+      src: images.teacher_dash,
       title: "Bright",
       subtitle: "- School Management Software (Clients - 2)",
       role: "Full Stack / Product Owner & Creator",
@@ -44,10 +44,9 @@ function Works() {
         "Node",
       ],
       body: "To create School Management Software for Schools in Australia .Implement an affordable solution—either custom-built or off-the-shelf—that delivers the necessary functionalities efficiently and securely.",
-      liveUrl: "",
+      liveUrl: "https://akaalshaouni.org/login",
       gitUrl: "",
     },
-
 
     {
       src: images.famChat,

@@ -118,5 +118,7 @@ export default {
   meteorrain,
   FTlt,
   vpa_marketing,
-  vpa_app
+  vpa_app,
+  teacher_dash,
+  home,
 }
