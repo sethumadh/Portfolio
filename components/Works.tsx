@@ -25,10 +25,10 @@ function Works() {
       ],
       body: `The objective is to build a B2B SaaS platform that streamlines vendor-paid advertising for the Australian residential real estate industry. The platform connects real estate agents, agencies, and suppliers — enabling property marketing campaigns to launch immediately through flexible payment models including upfront payments via Stripe, deferred financing through Campaign Flow and Afterpay, and BECS direct debit. Features multi-tenant role-based access control, subscription billing with tiered pricing, multi-party invoice reconciliation, and Australian financial compliance including AML/KYC verification and ABN/GST validation.`,
       liveUrl: "https://vpaconnect.com.au/",
-      gitUrl: "#",
+      gitUrl: "",
     },
     {
-      src: images.teacher_dash,
+      src: images.home,
       title: "Bright",
       subtitle: "- School Management Software (Clients - 2)",
       role: "Full Stack / Product Owner & Creator",
@@ -126,7 +126,7 @@ function Works() {
                   <Link
                     href={link.gitUrl}
                     className={`${
-                      link.title == "Bright"
+                      link.title == "Bright" ||link.title == "vpaConnect"
                         ? "hidden"
                         : "mr-8 text-sm md:text-base relative -top-1 -left-1 bg-orange-700 py-2.5 px-3 md:px-5 font-medium uppercase text-white transition-all before:absolute before:top-2 before:left-2 before:-z-[1] before:h-full before:w-full before:border-2 before:border-gray-700 before:transition-all before:content-[''] hover:top-0 hover:left-0 before:hover:top-0 before:hover:left-0 duration-300"
                     } `}
