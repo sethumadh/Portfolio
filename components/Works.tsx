@@ -48,26 +48,26 @@ function Works() {
       gitUrl: "",
     },
 
-    {
-      src: images.famChat,
-      title: "famChat",
-      subtitle: "- Social media for family and friends",
-      role: "Full Stack Developer",
-      tech: [
-        "Next js- app router",
-        "TypeScript",
-        "Tailwind",
-        "Clerk Auth",
-        "Zustand",
-        "postgres",
-        "prisma",
-        "socket.io",
-      ],
-      body: `The objective is to code a beautifully designed family/ closed friends chat
-      application dubbed 'famChat' App. This Application had a time line of 2 weeks time. Implemented CI/CD pipeline with Typescript type-checking, database migration and code linting`,
-      liveUrl: "https://famchat-production.up.railway.app/",
-      gitUrl: "https://github.com/sethumadh/famChat",
-    },
+    // {
+    //   src: images.famChat,
+    //   title: "famChat",
+    //   subtitle: "- Social media for family and friends",
+    //   role: "Full Stack Developer",
+    //   tech: [
+    //     "Next js- app router",
+    //     "TypeScript",
+    //     "Tailwind",
+    //     "Clerk Auth",
+    //     "Zustand",
+    //     "postgres",
+    //     "prisma",
+    //     "socket.io",
+    //   ],
+    //   body: `The objective is to code a beautifully designed family/ closed friends chat
+    //   application dubbed 'famChat' App. This Application had a time line of 2 weeks time. Implemented CI/CD pipeline with Typescript type-checking, database migration and code linting`,
+    //   liveUrl: "https://famchat-production.up.railway.app/",
+    //   gitUrl: "https://github.com/sethumadh/famChat",
+    // },
   ]
   return (
     <section className={`works bg-white `}>
