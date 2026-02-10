@@ -223,7 +223,7 @@ Increased Engagement: Fosters greater interaction between teachers, students, an
             </div>
             {/* landing image */}
             <div className="max-w-[100%] md:max-w-[80%] border border-none rounded mx-auto mb-2 md:mb-6">
-              <Image src={images.ftgraph} className="w-full" alt="filmpire" />
+              <Image src={images.home} className="w-full" alt="bright" />
               <p className="text-sm mt-1">{projectId} landing page</p>
             </div>
             <div className="w-full md:w-1/3  flex-col items-center mx-auto hidden">
@@ -299,7 +299,7 @@ Increased Engagement: Fosters greater interaction between teachers, students, an
             {/* image */}
             <div className="max-w-[100%] md:max-w-[80%] border border-none rounded mx-auto mb-2 md:mb-6">
               <Image
-                src={images.ftstdDetails}
+                src={images.teacher_dash}
                 className="w-full"
                 alt="filmpire"
               />
