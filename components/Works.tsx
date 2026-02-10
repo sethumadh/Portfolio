@@ -9,7 +9,7 @@ function Works() {
   const projectLinks = [
     {
       src: images.vpa_marketing,
-      title: "vpa_connect",
+      title: "vpaConnect",
       subtitle: "- Vendor paid advertising platform for real estate",
       role: "Full Stack Developer",
       tech: [

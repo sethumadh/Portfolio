@@ -308,7 +308,7 @@ Increased Engagement: Fosters greater interaction between teachers, students, an
           </div>
         </motion.article>
       )}
-      {projectId == "vpa_connect" && (
+      {projectId == "vpaConnect" && (
         <motion.article
           initial="hidden"
           whileInView="visible"
