@@ -86,7 +86,7 @@ Increased Engagement: Fosters greater interaction between teachers, students, an
 
       `,
       webStack:
-        "Used React.js for faster build with SPA for rendering to load pages leading to faster page loading times. \n Designed the architecture and as a sole developer to create core features and integrate third party UI kits like Shadcn, headless UI etc. Implemented Redux Toolkit to maintain a centralized client side state and keep changes mapped to UI through a complex and dynamic frontend allowing for connection to multiple APIs. optimised Redux Query and cache data for better user experience. Designed UI using Tailwind CSS with accessibility and responsiveness on all devices.	Worked on different branches, making pull requests to resolve merge conflicts and maintain a smooth git workflow.	Implemented CI/CD pipeline using git hub actions with self hosted workers with code linting and preview deploys. The Backend is setip using express and the database is based on Postgres db hosted on aws RDS instance.",
+        "Used React.js for faster build with SPA for rendering to load pages leading to faster page loading times. \n Designed the architecture and as a sole developer to create core features and integrate third party UI kits like Shadcn, headless UI etc. Implemented Redux Toolkit to maintain a centralized client side state and keep changes mapped to UI through a complex and dynamic frontend allowing for connection to multiple APIs. optimised Redux Query and cache data for better user experience. Designed UI using Tailwind CSS with accessibility and responsiveness on all devices.	Worked on different branches, making pull requests to resolve merge conflicts and maintain a smooth git workflow.	Implemented CI/CD pipeline using git hub actions with self hosted workers with code linting and preview deploys. The Backend is setip using express and the database is based on Postgres db hosted on aws EC2 instance.",
       stack: [
         "React Js",
         "Tailwind",
@@ -175,7 +175,6 @@ Increased Engagement: Fosters greater interaction between teachers, students, an
     <section
       className={`works  bg-white pt-10 md:pt-2 font-muli text-xl font-light`}
     >
-
       {projectId == "Bright" && (
         <motion.article
           initial="hidden"
@@ -355,7 +354,11 @@ Increased Engagement: Fosters greater interaction between teachers, students, an
             </div>
             {/* landing image */}
             <div className="max-w-[100%] md:max-w-[80%] border border-none rounded mx-auto mb-2 md:mb-6">
-              <Image src={images.vpa_app} className="w-full" alt="vpa_connect" />
+              <Image
+                src={images.vpa_app}
+                className="w-full"
+                alt="vpa_connect"
+              />
               <p className="text-sm mt-1">{projectId} landing page</p>
             </div>
 
@@ -431,142 +434,12 @@ Increased Engagement: Fosters greater interaction between teachers, students, an
             </div>
             {/* image */}
             <div className="max-w-[100%] md:max-w-[80%] border border-none rounded mx-auto mb-2 md:mb-6">
-              <Image src={images.vpa_app} className="w-full" alt="vpa_connect" />
-              <p className="text-sm mt-1">{vpa_connect[0].imageDesc}</p>
-            </div>
-          </div>
-        </motion.article>
-      )}
-      {/*  Car rent application */}
-
-      {projectId == "famChat" && (
-        <motion.article
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: false, amount: 0.0 }}
-          transition={{ duration: 0.6 }}
-          variants={{
-            hidden: { opacity: 0.2, x: 0 },
-            visible: { opacity: 1, x: 0 },
-          }}
-          className="w-[85%] md:w-[70%] mx-auto mt-8 md:mt-12 md:px-8 md:py-8"
-        >
-          <div className="flex justify-center md:justify-start text-2xl sm:text-4xl font-semibold tracking-wide mb-4 pt-8 pb-4">
-            <div className="relative  text-2xl md:text-4xl font-semibold md:font-bold tracking-wide text-center md:text-left italic">
-              {projectId}
-              <div className="h-[13.5px] w-[100%] bg-orange-600 absolute right-0 bottom-0 -z-30"></div>
-            </div>
-          </div>
-          <div>
-            <div className="mb-2">1 minute read</div>
-            <div className="leading-loose tracking-wide mb-2 md:mb-4">
-              {/* summary*/}
-              {famChat[0].summary}
-            </div>
-            <div className=" mb-4">
-              <div className="flex justify-center md:justify-start text-2xl sm:text-4xl font-semibold tracking-wide mb-1 md:mb-4 pt-8 pb-4">
-                <div className="relative  text-xl md:text-2xl font-semibold md:font-bold tracking-wide text-center md:text-left italic">
-                  Project Type
-                  <div className="h-[8.5px] w-[100%] bg-blue absolute right-0 bottom-0 -z-30"></div>
-                </div>
-              </div>
-              <div className="flex justify-center md:justify-start flex-wrap">
-                {/* Project Type */}
-                {famChat[0].type.map((item, i) => (
-                  <div
-                    className="text-white bg-orange-700 px-2 py-1  mr-1 mb-1 text "
-                    key={i}
-                  >
-                    <h2 className="text-center md:text-left italic text-sm md:text-md">
-                      {item}
-                    </h2>{" "}
-                  </div>
-                ))}
-              </div>
-            </div>
-            {/* landing image */}
-            <div className="max-w-[100%] md:max-w-[80%] border border-none rounded mx-auto mb-2 md:mb-6">
               <Image
-                src={images.landingPage}
+                src={images.vpa_app}
                 className="w-full"
-                alt="filmpire"
+                alt="vpa_connect"
               />
-              <p className="text-sm mt-1">{projectId} landing page</p>
-            </div>
-
-            <div className="flex justify-center md:justify-start text-2xl sm:text-4xl font-semibold tracking-wide mb-1 md:mb-4 pt-8 pb-4">
-              <div className="relative  text-xl md:text-2xl font-semibold md:font-bold tracking-wide text-center md:text-left italic">
-                Project Objective
-                <div className="h-[8.5px] w-[100%] bg-blue absolute right-0 bottom-0 -z-30"></div>
-              </div>
-            </div>
-            <div className="leading-relaxed tracking-wide mb-2 md:mb-4">
-              {/*  Project Objective */}
-              {famChat[0].objective}
-            </div>
-            <div className="flex justify-center md:justify-start text-2xl sm:text-4xl font-semibold tracking-widemb-1 md:mb-4 pt-8 pb-4">
-              <div className="relative  text-xl md:text-2xl  font-semibold md:font-bold tracking-wide text-center md:text-left italic">
-                Web Stack - Explanation
-                <div className="h-[13.5px] w-[100%] bg-blue absolute right-0 bottom-0 -z-30"></div>
-              </div>
-            </div>
-            <div className="leading-relaxed tracking-wide mb-8 md:mb-4">
-              {/*  Web Stack - Explanation */}
-              {famChat[0].webStack}
-            </div>
-            {/* stack
-             */}
-            <div className="flex flex-col items-center md:flex-row justify-center my-4">
-              <div className="w-full md:w-1/2">
-                <h1 className="text-lg md:text-xl font-semibold md:font-bold tracking-wide text-center md:text-left italic py-4">
-                  Stack
-                </h1>
-                <ul className="flex flex-wrap  ">
-                  {famChat[0].stack.map((item, i) => (
-                    <div
-                      key={i}
-                      className="text-white bg-black px-2 py-1  mr-1 mb-1 text "
-                    >
-                      {item}
-                    </div>
-                  ))}
-                </ul>
-              </div>
-              <div className="w-full md:w-1/3">
-                <h1 className="text-lg md:text-xl font-semibold md:font-bold tracking-wide text-center md:text-left italic py-4">
-                  Status
-                </h1>
-                <div className="flex mx-auto items-center justify-center mb-3 md:mb-0 w-full md:w-1/2 ">
-                  <Link
-                    href={famChat[0].gitUrl}
-                    className="mr-12 text-sm md:text-base relative -top-1 -left-1 bg-orange-700 py-2.5 px-5 font-medium uppercase text-white transition-all before:absolute before:top-2 before:left-2 before:-z-[1] before:h-full before:w-full before:border-2 before:border-gray-700 before:transition-all before:content-[''] hover:top-0 hover:left-0 before:hover:top-0 before:hover:left-0 duration-300"
-                  >
-                    Github
-                  </Link>
-                  <Link
-                    target={`_blank`}
-                    href={`#`}
-                    className="relative text-sm md:text-base -top-1 -left-1 bg-orange-700 py-2.5 px-5 font-medium uppercase text-white transition-all before:absolute before:top-2 before:left-2 before:-z-[1] before:h-full before:w-full before:border-2 before:border-gray-700 before:transition-all before:content-[''] hover:top-0 hover:left-0 before:hover:top-0 before:hover:left-0 duration-300"
-                  >
-                    Live
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="flex justify-center md:justify-start text-2xl sm:text-4xl font-semibold tracking-wide mb-1 md:mb-4 pt-8 pb-4">
-              <div className="relative  text-xl md:text-2xl font-semibold md:font-bold tracking-wide text-center md:text-left italic">
-                Problems & Learnings
-                <div className="h-[13.5px] w-[100%] bg-blue absolute right-0 bottom-0 -z-30"></div>
-              </div>
-            </div>
-            <div className="leading-relaxed tracking-wide mb-2 md:mb-4">
-              {/* Problems and Learnings */}
-              {famChat[0].learnings}
-            </div>
-            {/* image */}
-            <div className="max-w-[100%] md:max-w-[80%] border border-none rounded mx-auto mb-2 md:mb-6">
-              <Image src={images.oneOnOne} className="w-full" alt="filmpire" />
-              <p className="text-sm mt-1">{famChat[0].imageDesc}</p>
+              <p className="text-sm mt-1">{vpa_connect[0].imageDesc}</p>
             </div>
           </div>
         </motion.article>

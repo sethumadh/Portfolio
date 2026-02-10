@@ -30,7 +30,7 @@ function Works() {
     {
       src: images.home,
       title: "Bright",
-      subtitle: "- School Management Software (Clients - 2)",
+      subtitle: "- School Management Software",
       role: "Full Stack / Product Owner & Creator",
       tech: [
         "React Js",
@@ -43,9 +43,9 @@ function Works() {
         "Jest +RTL",
         "Node",
       ],
-      body: "To create School Management Software for Schools in Australia .Implement an affordable solution—either custom-built or off-the-shelf—that delivers the necessary functionalities efficiently and securely.",
+      body: "Commercial School Management Software for medium strength Schools in Australia .Implement an affordable solution—either custom-built or off-the-shelf—that delivers the necessary functionalities efficiently and securely.Provides a single access point for all essential information about students, teachers, curriculum, and school operations, Enhanced Security Features:Protects personal data and sensitive information from cyber threats with robust security measure. mplemented CI/CD pipeline using git hub actions with self hosted workers with code linting and preview deploys. The Backend is setip using express and the database is based on Postgres db hosted on aws EC2 instance.",
       liveUrl: "https://akaalshaouni.org/login",
-      gitUrl: "",
+      gitUrl: "https://github.com/sethumadh/SLMS-api",
     },
 
     // {
@@ -126,7 +126,7 @@ function Works() {
                   <Link
                     href={link.gitUrl}
                     className={`${
-                      link.title == "Bright" ||link.title == "vpaConnect"
+                      link.title == "vpaConnect"
                         ? "hidden"
                         : "mr-8 text-sm md:text-base relative -top-1 -left-1 bg-orange-700 py-2.5 px-3 md:px-5 font-medium uppercase text-white transition-all before:absolute before:top-2 before:left-2 before:-z-[1] before:h-full before:w-full before:border-2 before:border-gray-700 before:transition-all before:content-[''] hover:top-0 hover:left-0 before:hover:top-0 before:hover:left-0 duration-300"
                     } `}
