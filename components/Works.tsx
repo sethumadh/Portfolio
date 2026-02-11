@@ -31,7 +31,7 @@ function Works() {
       src: images.home,
       title: "Bright",
       subtitle: "- School Management Software",
-      role: "Full Stack / Product Owner & Creator",
+      role: "Full Stack / Co founder / Product Owner & Creator",
       tech: [
         "React Js",
         "Tailwind",

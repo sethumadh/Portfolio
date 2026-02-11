@@ -57,8 +57,8 @@ import vpa_marketing from "../assets/vpa_marketing.png"
 import vpa_app from "../assets/vpa_app.png"
 import teacher_dash from "../assets/teacher_dash.png"
 import home from "../assets/home.png"
-
-
+import daniel_ram from "../assets/daniel_ram.jpeg"
+import sruthi from "../assets/sruthi.jpeg"
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
@@ -121,4 +121,6 @@ export default {
   vpa_app,
   teacher_dash,
   home,
+  daniel_ram,
+  sruthi
 }
