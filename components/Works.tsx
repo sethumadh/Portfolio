@@ -10,7 +10,7 @@ function Works() {
     {
       src: images.vpa_marketing,
       title: "vpaConnect",
-      subtitle: "- Vendor paid advertising platform for real estate",
+      subtitle: "- Vendor Paid Advertising",
       role: "Lead - Full Stack Developer",
       tech: [
         "Next.js 15 - App Router",
