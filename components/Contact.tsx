@@ -44,17 +44,17 @@ const Contact = () => {
       url: "mailto:sethumadh@gmail.co",
       style: "",
     },
-    {
-      id: 4,
-      child: (
-        <h1 className="font-bold text-5xl pt-1">
-          CV
-        </h1>
-      ),
-      href: "https://drive.google.com/file/d/1APrN7MNMLj3OrhNYrL_s7HEGm364kwUc/view?usp=share_link",
-      url: "mailto:sethumadh@gmail.co",
-      style: "animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75",
-    },
+    // {
+    //   id: 4,
+    //   child: (
+    //     <h1 className="font-bold text-5xl pt-1">
+    //       CV
+    //     </h1>
+    //   ),
+    //   href: "https://drive.google.com/file/d/1APrN7MNMLj3OrhNYrL_s7HEGm364kwUc/view?usp=share_link",
+    //   url: "mailto:sethumadh@gmail.co",
+    //   style: "animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75",
+    // },
   ]
 
   return (
